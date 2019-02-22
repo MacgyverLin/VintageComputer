@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:8051-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
-Sheet 4 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -13,85 +14,178 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3250 3500 0    50   Input ~ 0
-D7
-Text HLabel 3250 3400 0    50   Input ~ 0
-D6
-Text HLabel 3250 3300 0    50   Input ~ 0
-D5
-Text HLabel 3250 3200 0    50   Input ~ 0
-D4
-Text HLabel 3250 3100 0    50   Input ~ 0
-D3
-Text HLabel 3250 3000 0    50   Input ~ 0
-D2
-Text HLabel 3250 2900 0    50   Input ~ 0
-D1
-Text HLabel 3250 2800 0    50   Input ~ 0
-D0
-Text HLabel 5600 4700 2    50   Input ~ 0
+Text HLabel 15500 4750 2    50   Input ~ 0
 GND
-Text HLabel 5600 800  2    50   Input ~ 0
+Text HLabel 15550 850  2    50   Input ~ 0
 +5V
-Text HLabel 3250 2000 0    50   Input ~ 0
-~RD
-Text HLabel 3250 2100 0    50   Input ~ 0
-~WR
-Text HLabel 3250 1600 0    50   Input ~ 0
-RESET
-Text HLabel 3250 2500 0    50   Input ~ 0
-A1
-Text HLabel 3250 2400 0    50   Input ~ 0
-A0
 $Comp
-L Interface:8255 U8
-U 1 1 5C8F2B3E
-P 4100 2900
-AR Path="/5E02D9A0/5C8F2B3E" Ref="U8"  Part="1" 
-AR Path="/5E17A1DA/5C8F2B3E" Ref="U?"  Part="1" 
-F 0 "U8" H 3600 4400 50  0000 C CNN
-F 1 "8255" H 4550 4400 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H 4100 3200 50  0001 C CNN
-F 3 "http://aturing.umcs.maine.edu/~meadow/courses/cos335/Intel8255A.pdf" H 4100 3200 50  0001 C CNN
-	1    4100 2900
+L Interface:8255 U?
+U 1 1 5D59FA94
+P 2500 2800
+AR Path="/5DED3C2A/5D59FA94" Ref="U?"  Part="1" 
+AR Path="/5DFCE73E/5D59FA94" Ref="U?"  Part="1" 
+AR Path="/5E02D9A0/5D59FA94" Ref="U?"  Part="1" 
+AR Path="/5D59EC5C/5D59FA94" Ref="U?"  Part="1" 
+F 0 "U?" H 2000 4300 50  0000 C CNN
+F 1 "8255" H 2950 4300 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 2500 3100 50  0001 C CNN
+F 3 "http://aturing.umcs.maine.edu/~meadow/courses/cos335/Intel8255A.pdf" H 2500 3100 50  0001 C CNN
+	1    2500 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 1500 3400 0    50   Input ~ 0
+D7
+Text HLabel 1500 3300 0    50   Input ~ 0
+D6
+Text HLabel 1500 3200 0    50   Input ~ 0
+D5
+Text HLabel 1500 3100 0    50   Input ~ 0
+D4
+Text HLabel 1500 3000 0    50   Input ~ 0
+D3
+Text HLabel 1500 2900 0    50   Input ~ 0
+D2
+Text HLabel 1500 2800 0    50   Input ~ 0
+D1
+Text HLabel 1500 2700 0    50   Input ~ 0
+D0
+Wire Wire Line
+	1800 2700 1500 2700
+Wire Wire Line
+	1800 2800 1500 2800
+Wire Wire Line
+	1800 2900 1500 2900
+Wire Wire Line
+	1800 3000 1500 3000
+Wire Wire Line
+	1800 3100 1500 3100
+Wire Wire Line
+	1800 3200 1500 3200
+Wire Wire Line
+	1800 3300 1500 3300
+Wire Wire Line
+	1800 3400 1500 3400
+Text HLabel 1500 2400 0    50   Input ~ 0
+A1
+Text HLabel 1500 2300 0    50   Input ~ 0
+A0
+Wire Wire Line
+	1800 2300 1500 2300
+Wire Wire Line
+	1800 2400 1500 2400
+Text HLabel 1500 2000 0    50   Input ~ 0
+~WR
+Text HLabel 1500 1900 0    50   Input ~ 0
+~RD
+Wire Wire Line
+	1800 1900 1500 1900
+Wire Wire Line
+	1800 2000 1500 2000
+Wire Wire Line
+	1800 1800 1500 1800
+Wire Wire Line
+	900  850  2500 850 
+Wire Wire Line
+	1200 4750 2500 4750
+Wire Wire Line
+	2500 1200 2500 850 
+Connection ~ 2500 850 
+Wire Wire Line
+	2500 850  4500 850 
+Wire Wire Line
+	2500 4400 2500 4750
+Connection ~ 2500 4750
+Wire Wire Line
+	2500 4750 15500 4750
+Text HLabel 1500 1500 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	1800 1500 1500 1500
+$Comp
+L 74xx:74LS138 U?
+U 1 1 5D59FABE
+P 4500 2700
+AR Path="/5C68B4BB/5D59FABE" Ref="U?"  Part="1" 
+AR Path="/5DED3C2A/5D59FABE" Ref="U?"  Part="1" 
+AR Path="/5D59EC5C/5D59FABE" Ref="U?"  Part="1" 
+F 0 "U?" H 4250 3150 50  0000 C CNN
+F 1 "74LS138" H 4750 3150 50  0000 C CNN
+F 2 "" H 4500 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 4500 2700 50  0001 C CNN
+	1    4500 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 800  4100 800 
+	4500 2100 4500 2050
 Wire Wire Line
-	4100 800  4100 1300
+	4500 3400 4500 4800
+Text HLabel 3800 2600 0    50   Input ~ 0
+A6
+Text HLabel 3800 2500 0    50   Input ~ 0
+A5
+Text HLabel 3800 2400 0    50   Input ~ 0
+A4
 Wire Wire Line
-	5600 4700 4100 4700
+	4000 2400 3800 2400
 Wire Wire Line
-	4100 4700 4100 4500
+	4000 2500 3800 2500
 Wire Wire Line
-	3250 2800 3400 2800
+	4000 2600 3800 2600
 Wire Wire Line
-	3400 2900 3250 2900
+	4000 3000 3950 3000
 Wire Wire Line
-	3250 3000 3400 3000
+	3950 3000 3950 3100
 Wire Wire Line
-	3400 3100 3250 3100
+	3950 3100 4000 3100
 Wire Wire Line
-	3250 3200 3400 3200
+	4000 2900 3950 2900
 Wire Wire Line
-	3400 3300 3250 3300
+	3950 2900 3950 2050
 Wire Wire Line
-	3250 3400 3400 3400
+	3950 2050 4500 2050
+Connection ~ 4500 2050
 Wire Wire Line
-	3400 3500 3250 3500
+	4500 2050 4500 850 
+Text GLabel 5100 2400 2    50   Input ~ 0
+~IO0_CS
+Connection ~ 3950 3100
 Wire Wire Line
-	3250 2000 3400 2000
+	5100 2400 5000 2400
+Text HLabel 3800 3100 0    50   Input ~ 0
+~IOREQ
 Wire Wire Line
-	3400 2100 3250 2100
-Wire Wire Line
-	3250 2400 3400 2400
-Wire Wire Line
-	3400 2500 3250 2500
-Wire Wire Line
-	3400 1600 3250 1600
-Text HLabel 3250 1900 0    50   Input ~ 0
+	3800 3100 3950 3100
+Text GLabel 5100 2500 2    50   Input ~ 0
 ~IO1_CS
 Wire Wire Line
-	3400 1900 3250 1900
+	5100 2500 5000 2500
+Text GLabel 5100 2600 2    50   Input ~ 0
+~IO2_CS
+Wire Wire Line
+	5100 2600 5000 2600
+Text GLabel 5100 2700 2    50   Input ~ 0
+~IO3_CS
+Wire Wire Line
+	5100 2700 5000 2700
+Text GLabel 5100 2800 2    50   Input ~ 0
+~IO4_CS
+Wire Wire Line
+	5100 2800 5000 2800
+Text GLabel 5100 2900 2    50   Input ~ 0
+~IO5_CS
+Wire Wire Line
+	5100 2900 5000 2900
+Text GLabel 5100 3000 2    50   Input ~ 0
+~IO6_CS
+Wire Wire Line
+	5100 3000 5000 3000
+Text GLabel 5100 3100 2    50   Input ~ 0
+~IO7_CS
+Wire Wire Line
+	5100 3100 5000 3100
+Text GLabel 1500 1800 0    50   Input ~ 0
+~IO1_CS
+Connection ~ 4500 850 
+Wire Wire Line
+	4500 850  15550 850 
 $EndSCHEMATC
