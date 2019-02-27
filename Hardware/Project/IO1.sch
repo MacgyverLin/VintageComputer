@@ -25,8 +25,8 @@ P 2500 2800
 AR Path="/5DED3C2A/5D59FA94" Ref="U?"  Part="1" 
 AR Path="/5DFCE73E/5D59FA94" Ref="U?"  Part="1" 
 AR Path="/5E02D9A0/5D59FA94" Ref="U?"  Part="1" 
-AR Path="/5D59EC5C/5D59FA94" Ref="U?"  Part="1" 
-F 0 "U?" H 2000 4300 50  0000 C CNN
+AR Path="/5D59EC5C/5D59FA94" Ref="U16"  Part="1" 
+F 0 "U16" H 2000 4300 50  0000 C CNN
 F 1 "8255" H 2950 4300 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm" H 2500 3100 50  0001 C CNN
 F 3 "http://aturing.umcs.maine.edu/~meadow/courses/cos335/Intel8255A.pdf" H 2500 3100 50  0001 C CNN
@@ -107,8 +107,8 @@ U 1 1 5D59FABE
 P 4500 2700
 AR Path="/5C68B4BB/5D59FABE" Ref="U?"  Part="1" 
 AR Path="/5DED3C2A/5D59FABE" Ref="U?"  Part="1" 
-AR Path="/5D59EC5C/5D59FABE" Ref="U?"  Part="1" 
-F 0 "U?" H 4250 3150 50  0000 C CNN
+AR Path="/5D59EC5C/5D59FABE" Ref="U17"  Part="1" 
+F 0 "U17" H 4250 3150 50  0000 C CNN
 F 1 "74LS138" H 4750 3150 50  0000 C CNN
 F 2 "" H 4500 2700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 4500 2700 50  0001 C CNN
