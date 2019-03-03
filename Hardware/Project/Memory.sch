@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -293,28 +293,16 @@ Text GLabel 3350 2650 2    50   Input ~ 0
 ~MEM1_CS
 Wire Wire Line
 	3350 2650 3250 2650
-Text GLabel 3350 2750 2    50   Input ~ 0
-~MEM2_CS
 Wire Wire Line
 	3350 2750 3250 2750
-Text GLabel 3350 2850 2    50   Input ~ 0
-~MEM3_CS
 Wire Wire Line
 	3350 2850 3250 2850
-Text GLabel 3350 2950 2    50   Input ~ 0
-~MEM4_CS
 Wire Wire Line
 	3350 2950 3250 2950
-Text GLabel 3350 3050 2    50   Input ~ 0
-~MEM5_CS
 Wire Wire Line
 	3350 3050 3250 3050
-Text GLabel 3350 3150 2    50   Input ~ 0
-~MEM6_CS
 Wire Wire Line
 	3350 3150 3250 3150
-Text GLabel 3350 3250 2    50   Input ~ 0
-~MEM7_CS
 Wire Wire Line
 	3350 3250 3250 3250
 Wire Wire Line

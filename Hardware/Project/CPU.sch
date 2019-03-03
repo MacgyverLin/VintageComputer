@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -43,8 +43,8 @@ P 3050 4150
 AR Path="/5C68B4BB/5C830428" Ref="Y1"  Part="1" 
 AR Path="/5C8BEFCF/5C830428" Ref="Y?"  Part="1" 
 AR Path="/5DED3C2A/5C830428" Ref="Y?"  Part="1" 
-F 0 "Y1" H 3050 3882 50  0000 C CNN
-F 1 "Crystal" H 3050 3973 50  0000 C CNN
+F 0 "Y1" H 2900 4100 50  0000 C CNN
+F 1 "Crystal" H 3300 4100 50  0000 C CNN
 F 2 "" H 3050 4150 50  0001 C CNN
 F 3 "~" H 3050 4150 50  0001 C CNN
 	1    3050 4150
@@ -278,31 +278,31 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C68B59C
-P 1550 3300
+P 2100 3300
 AR Path="/5C68B59C" Ref="R?"  Part="1" 
 AR Path="/5C68B4BB/5C68B59C" Ref="R1"  Part="1" 
 AR Path="/5C8BEFCF/5C68B59C" Ref="R?"  Part="1" 
 AR Path="/5DED3C2A/5C68B59C" Ref="R?"  Part="1" 
-F 0 "R1" V 1600 3100 50  0000 L CNN
-F 1 "1k" V 1600 3400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1480 3300 50  0001 C CNN
-F 3 "~" H 1550 3300 50  0001 C CNN
-	1    1550 3300
+F 0 "R1" V 2150 3100 50  0000 L CNN
+F 1 "1k" V 2150 3400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2030 3300 50  0001 C CNN
+F 3 "~" H 2100 3300 50  0001 C CNN
+	1    2100 3300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP1 C?
 U 1 1 5C68B593
-P 1550 4450
+P 2100 4450
 AR Path="/5C68B593" Ref="C?"  Part="1" 
 AR Path="/5C68B4BB/5C68B593" Ref="C1"  Part="1" 
 AR Path="/5C8BEFCF/5C68B593" Ref="C?"  Part="1" 
 AR Path="/5DED3C2A/5C68B593" Ref="C?"  Part="1" 
-F 0 "C1" V 1600 4550 50  0000 L CNN
-F 1 "CP1" V 1600 4200 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 1550 4450 50  0001 C CNN
-F 3 "~" H 1550 4450 50  0001 C CNN
-	1    1550 4450
+F 0 "C1" V 2150 4550 50  0000 L CNN
+F 1 "CP1" V 2150 4200 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 2100 4450 50  0001 C CNN
+F 3 "~" H 2100 4450 50  0001 C CNN
+	1    2100 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -346,7 +346,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 6600 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 8051-rescue:STC89C52-Vintage U?
+L 8051-rescue:STC89C52-Vintage-8051-rescue U?
 U 1 1 5CF7A876
 P 4150 1800
 AR Path="/5CF7A876" Ref="U?"  Part="1" 
@@ -365,14 +365,14 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5CD1D030
-P 1300 4600
+P 1850 4600
 AR Path="/5C68B4BB/5CD1D030" Ref="SW1"  Part="1" 
 AR Path="/5DED3C2A/5CD1D030" Ref="SW?"  Part="1" 
-F 0 "SW1" H 1300 4885 50  0000 C CNN
-F 1 "SW_Push" H 1300 4794 50  0000 C CNN
-F 2 "" H 1300 4800 50  0001 C CNN
-F 3 "" H 1300 4800 50  0001 C CNN
-	1    1300 4600
+F 0 "SW1" H 1850 4885 50  0000 C CNN
+F 1 "SW_Push" H 1850 4794 50  0000 C CNN
+F 2 "" H 1850 4800 50  0001 C CNN
+F 3 "" H 1850 4800 50  0001 C CNN
+	1    1850 4600
 	0    -1   -1   0   
 $EndComp
 Text Notes 8800 4450 0    50   ~ 0
@@ -438,9 +438,9 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4350 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8350 1150 2    50   Input ~ 0
-~WR
+~CPU_WR
 Text GLabel 8350 1250 2    50   Input ~ 0
-~RD
+~CPU_RD
 $Comp
 L 74xx:74LS138 U5
 U 1 1 5C74C577
@@ -486,7 +486,7 @@ Connection ~ 13200 2250
 Wire Wire Line
 	14350 1550 14250 1550
 Text HLabel 13050 2250 0    50   Input ~ 0
-~IOREQ
+~IORQ
 Wire Wire Line
 	13050 2250 13200 2250
 Text GLabel 14350 1650 2    50   Input ~ 0
@@ -686,8 +686,6 @@ Wire Wire Line
 Wire Wire Line
 	7650 8250 8300 8250
 Wire Wire Line
-	8700 8650 8700 8900
-Wire Wire Line
 	8300 8350 7650 8350
 Wire Wire Line
 	9650 1850 9000 1850
@@ -768,15 +766,8 @@ Text GLabel 5950 5550 0    50   Input ~ 0
 ~ISP
 Wire Wire Line
 	8700 5200 8700 6450
-Wire Wire Line
-	8300 8450 8100 8450
-Wire Wire Line
-	8100 8450 8100 8900
-Wire Wire Line
-	8100 8900 8700 8900
-Connection ~ 8700 8900
 Text GLabel 5950 5750 0    50   Input ~ 0
-~WR
+~CPU_WR
 Wire Wire Line
 	6200 5550 5950 5550
 Wire Wire Line
@@ -795,23 +786,23 @@ $EndComp
 Text GLabel 5950 5900 0    50   Input ~ 0
 ~BOOTING
 Text GLabel 5950 6100 0    50   Input ~ 0
-~RD
+~CPU_RD
 Wire Wire Line
 	6200 5900 5950 5900
 Wire Wire Line
 	6200 6100 5950 6100
 Text GLabel 7050 5650 2    50   Input ~ 0
-~WR0
+~WR_BIOS
 Wire Wire Line
 	6800 5650 7050 5650
 Text GLabel 7050 6000 2    50   Input ~ 0
-~RD0
+~RD_BIOS
 Wire Wire Line
 	6800 6000 7050 6000
 Text GLabel 7650 8250 0    50   Input ~ 0
-~WR0
+~WR_BIOS
 Text GLabel 7650 8350 0    50   Input ~ 0
-~RD0
+~RD_BIOS
 $Comp
 L 74xx:74LS32 U8
 U 3 1 5C8F18D6
@@ -826,7 +817,7 @@ $EndComp
 Text GLabel 5950 6300 0    50   Input ~ 0
 ISP
 Text GLabel 5950 6500 0    50   Input ~ 0
-~WR
+~CPU_WR
 Wire Wire Line
 	6200 6300 5950 6300
 Wire Wire Line
@@ -845,7 +836,7 @@ $EndComp
 Text GLabel 5950 6650 0    50   Input ~ 0
 BOOTING
 Text GLabel 5950 6850 0    50   Input ~ 0
-~RD
+~CPU_RD
 Wire Wire Line
 	6200 6650 5950 6650
 Wire Wire Line
@@ -873,8 +864,6 @@ Wire Wire Line
 	11250 1000 11250 1250
 Wire Wire Line
 	11250 1000 11950 1000
-Wire Wire Line
-	1300 4800 1300 4950
 Connection ~ 4750 6200
 Connection ~ 4750 5700
 Connection ~ 2850 4950
@@ -893,51 +882,40 @@ Wire Wire Line
 $Comp
 L 74xx:74LS14 U4
 U 1 1 5CD3DCF2
-P 1900 3900
-F 0 "U4" H 1900 4217 50  0000 C CNN
-F 1 "74LS14" H 1900 4126 50  0000 C CNN
-F 2 "" H 1900 3900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 1900 3900 50  0001 C CNN
-	1    1900 3900
+P 2450 3900
+F 0 "U4" H 2450 4217 50  0000 C CNN
+F 1 "74LS14" H 2450 4126 50  0000 C CNN
+F 2 "" H 2450 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 2450 3900 50  0001 C CNN
+	1    2450 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 3450 1550 3900
+	2100 3450 2100 3900
 Wire Wire Line
-	1600 3900 1550 3900
+	2150 3900 2100 3900
 Wire Wire Line
-	1550 4600 1550 4950
+	2100 4600 2100 4950
 Text Notes 1650 7850 0    50   ~ 0
-1111 1111 0111 xxxx (FF70-FF7F)\nFF70 = ~EXIT_BOOT\nFF71 = ~ENTER_ISP\nFF72\nFF73\nFF74\nFF75\nFF76\nFF77
+1111 1111 0111 xxxx (FF70-FF7F)\nFF70 = ~EXIT_BOOT\nFF71 = ~ENTER_ISP\nFF72 = ~WARM_BOOT\nFF73\nFF74\nFF75\nFF76\nFF77
 Text Notes 13800 3250 0    50   ~ 0
 1111 1111 0xxx xxxx (FF00-FF7F) \n~IO0_CS~ = (FF00-FF0F)\n~IO1_CS~ = (FF10-FF1F)\n~IO2_CS~ = (FF20-FF2F)\n~IO3_CS~ = (FF30-FF3F)\n~IO4_CS~ = (FF40-FF4F)\n~IO5_CS~ = (FF50-FF5F)\n~IO6_CS~ = (FF60-FF6F)\n~IO7_CS~ = (FF70-FF7F)
 Wire Wire Line
 	13750 2550 13750 4950
 Wire Wire Line
 	1600 7150 1600 9850
-Text GLabel 800  6750 0    50   Input ~ 0
-~WR
+Text GLabel 1000 6750 0    50   Input ~ 0
+~CPU_WR
 Wire Wire Line
-	950  6850 1100 6850
+	2100 4300 2100 3900
+Connection ~ 2100 3900
 Wire Wire Line
-	800  6750 1100 6750
-Text HLabel 1100 3900 0    50   Input ~ 0
-~RESET
+	1850 4400 1850 3900
 Wire Wire Line
-	1100 3900 1300 3900
-Connection ~ 1550 4950
+	1850 3900 2100 3900
+Connection ~ 1850 3900
 Wire Wire Line
-	1550 4950 2850 4950
-Wire Wire Line
-	1550 4300 1550 3900
-Connection ~ 1550 3900
-Wire Wire Line
-	1300 4400 1300 3900
-Wire Wire Line
-	1300 3900 1550 3900
-Connection ~ 1300 3900
-Wire Wire Line
-	1550 600  1550 3150
+	2100 600  2100 3150
 $Comp
 L Device:R_Network08 RN1
 U 1 1 5D4045A6
@@ -1061,11 +1039,6 @@ Wire Wire Line
 	5900 2100 8350 2100
 Wire Wire Line
 	5400 1600 8350 1600
-Wire Wire Line
-	1000 600  1550 600 
-Connection ~ 1550 600 
-Wire Wire Line
-	1550 600  4150 600 
 Connection ~ 4150 600 
 Wire Wire Line
 	4150 600  5200 600 
@@ -1125,21 +1098,15 @@ Connection ~ 1600 9850
 Wire Wire Line
 	1600 9850 8700 9850
 Wire Wire Line
-	2200 3900 3450 3900
-Text HLabel 3300 6300 0    50   Input ~ 0
-~RESET
+	3350 6300 4050 6300
 Wire Wire Line
-	3300 6300 4050 6300
+	3500 5600 3800 5600
 Wire Wire Line
-	3500 5600 4050 5600
+	3500 6850 3700 6850
 Wire Wire Line
-	3500 6850 4050 6850
+	1600 5200 3700 5200
 Wire Wire Line
-	1600 5200 8700 5200
-Text HLabel 3300 7550 0    50   Input ~ 0
-~RESET
-Wire Wire Line
-	3300 7550 4050 7550
+	3350 7550 4050 7550
 Connection ~ 4750 6950
 Connection ~ 4750 7450
 Connection ~ 13750 600 
@@ -1155,8 +1122,6 @@ Wire Wire Line
 Connection ~ 8700 5200
 Wire Wire Line
 	8700 5200 15800 5200
-Wire Wire Line
-	8700 8900 8700 9850
 Connection ~ 8700 9850
 Wire Wire Line
 	8700 9850 15750 9850
@@ -1165,27 +1130,163 @@ Text GLabel 2200 6250 2    50   Input ~ 0
 Text GLabel 2200 6350 2    50   Input ~ 0
 ~WARM_BOOT
 $Comp
-L pspice:DIODE D?
+L pspice:DIODE D1
 U 1 1 5E01A0E8
-P 1000 3600
-F 0 "D?" H 1000 3865 50  0000 C CNN
-F 1 "DIODE" H 1000 3774 50  0000 C CNN
-F 2 "" H 1000 3600 50  0001 C CNN
-F 3 "~" H 1000 3600 50  0001 C CNN
-	1    1000 3600
+P 1550 3600
+F 0 "D1" H 1750 3550 50  0000 C CNN
+F 1 "DIODE" H 1250 3550 50  0000 C CNN
+F 2 "" H 1550 3600 50  0001 C CNN
+F 3 "~" H 1550 3600 50  0001 C CNN
+	1    1550 3600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1200 3600 1300 3600
+	1750 3600 1850 3600
 Wire Wire Line
-	1300 3600 1300 3900
-Text GLabel 700  3600 0    50   Input ~ 0
+	1850 3600 1850 3900
+Text GLabel 1250 3600 0    50   Input ~ 0
 ~WARM_BOOT
 Wire Wire Line
-	700  3600 800  3600
-Connection ~ 1300 4950
+	1250 3600 1350 3600
+$Comp
+L Device:R R?
+U 1 1 5C7C7830
+P 3800 5400
+AR Path="/5C7C7830" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5C7C7830" Ref="R4"  Part="1" 
+AR Path="/5C8BEFCF/5C7C7830" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5C7C7830" Ref="R?"  Part="1" 
+F 0 "R4" V 3850 5200 50  0000 L CNN
+F 1 "1k" V 3850 5500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3730 5400 50  0001 C CNN
+F 3 "~" H 3800 5400 50  0001 C CNN
+	1    3800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C7E157B
+P 3700 5400
+AR Path="/5C7E157B" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5C7E157B" Ref="R3"  Part="1" 
+AR Path="/5C8BEFCF/5C7E157B" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5C7E157B" Ref="R?"  Part="1" 
+F 0 "R3" V 3750 5200 50  0000 L CNN
+F 1 "1k" V 3750 5500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3630 5400 50  0001 C CNN
+F 3 "~" H 3700 5400 50  0001 C CNN
+	1    3700 5400
+	1    0    0    1   
+$EndComp
 Wire Wire Line
-	1300 4950 1550 4950
+	3800 5250 3800 5200
+Connection ~ 3800 5200
 Wire Wire Line
-	1000 4950 1300 4950
+	3800 5200 8700 5200
+Wire Wire Line
+	3700 5250 3700 5200
+Connection ~ 3700 5200
+Wire Wire Line
+	3700 5200 3800 5200
+Wire Wire Line
+	3700 5550 3700 6850
+Connection ~ 3700 6850
+Wire Wire Line
+	3700 6850 4050 6850
+Wire Wire Line
+	3800 5550 3800 5600
+Connection ~ 3800 5600
+Wire Wire Line
+	3800 5600 4050 5600
+Wire Wire Line
+	1100 6750 1000 6750
+Wire Wire Line
+	1100 6850 950  6850
+Text HLabel 7650 8450 0    50   Input ~ 0
+~MEMRQ
+Wire Wire Line
+	8700 8650 8700 9850
+Wire Wire Line
+	7650 8450 8300 8450
+$Comp
+L Device:Q_PNP_CBE Q1
+U 1 1 5C9910E3
+P 1300 4500
+F 0 "Q1" H 1491 4546 50  0000 L CNN
+F 1 "Q_PNP_CBE" H 1491 4455 50  0000 L CNN
+F 2 "" H 1500 4600 50  0001 C CNN
+F 3 "~" H 1300 4500 50  0001 C CNN
+	1    1300 4500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1400 4700 1400 4950
+Connection ~ 2100 600 
+Wire Wire Line
+	2100 600  4150 600 
+Connection ~ 2100 4950
+Wire Wire Line
+	2100 4950 2850 4950
+Wire Wire Line
+	1400 4950 1850 4950
+Wire Wire Line
+	1000 600  2100 600 
+Wire Wire Line
+	2750 3900 3100 3900
+Wire Wire Line
+	1400 3900 1400 4300
+Wire Wire Line
+	1400 3900 1850 3900
+$Comp
+L Device:R R?
+U 1 1 5CAD7883
+P 900 4500
+AR Path="/5CAD7883" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5CAD7883" Ref="R2"  Part="1" 
+AR Path="/5C8BEFCF/5CAD7883" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5CAD7883" Ref="R?"  Part="1" 
+F 0 "R2" V 950 4300 50  0000 L CNN
+F 1 "1k" V 950 4600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 830 4500 50  0001 C CNN
+F 3 "~" H 900 4500 50  0001 C CNN
+	1    900  4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1100 4500 1050 4500
+Text GLabel 1050 4200 0    50   Input ~ 0
+~WARM_BOOT
+Wire Wire Line
+	1050 4200 1150 4200
+Wire Wire Line
+	1150 4200 1150 4350
+Wire Wire Line
+	1150 4350 650  4350
+Wire Wire Line
+	650  4350 650  4500
+Wire Wire Line
+	650  4500 750  4500
+Wire Wire Line
+	1850 4800 1850 4950
+Connection ~ 1850 4950
+Wire Wire Line
+	1850 4950 2100 4950
+Text HLabel 2500 2900 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	2500 2900 3100 2900
+Wire Wire Line
+	3100 2900 3100 3900
+Connection ~ 3100 3900
+Wire Wire Line
+	3100 3900 3450 3900
+Text GLabel 850  3900 0    50   Input ~ 0
+~RESET
+Wire Wire Line
+	850  3900 1400 3900
+Connection ~ 1400 3900
+Text GLabel 3350 6300 0    50   Input ~ 0
+~RESET
+Text GLabel 3350 7550 0    50   Input ~ 0
+~RESET
 $EndSCHEMATC

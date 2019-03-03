@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 5 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -146,41 +146,27 @@ Wire Wire Line
 Connection ~ 4500 2050
 Wire Wire Line
 	4500 2050 4500 850 
-Text GLabel 5100 2400 2    50   Input ~ 0
-~IO0_CS
 Connection ~ 3950 3100
 Wire Wire Line
 	5100 2400 5000 2400
 Text HLabel 3800 3100 0    50   Input ~ 0
-~IOREQ
+~IORQ
 Wire Wire Line
 	3800 3100 3950 3100
 Text GLabel 5100 2500 2    50   Input ~ 0
 ~IO1_CS
 Wire Wire Line
 	5100 2500 5000 2500
-Text GLabel 5100 2600 2    50   Input ~ 0
-~IO2_CS
 Wire Wire Line
 	5100 2600 5000 2600
-Text GLabel 5100 2700 2    50   Input ~ 0
-~IO3_CS
 Wire Wire Line
 	5100 2700 5000 2700
-Text GLabel 5100 2800 2    50   Input ~ 0
-~IO4_CS
 Wire Wire Line
 	5100 2800 5000 2800
-Text GLabel 5100 2900 2    50   Input ~ 0
-~IO5_CS
 Wire Wire Line
 	5100 2900 5000 2900
-Text GLabel 5100 3000 2    50   Input ~ 0
-~IO6_CS
 Wire Wire Line
 	5100 3000 5000 3000
-Text GLabel 5100 3100 2    50   Input ~ 0
-~IO7_CS
 Wire Wire Line
 	5100 3100 5000 3100
 Text GLabel 1500 1800 0    50   Input ~ 0
