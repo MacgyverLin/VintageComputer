@@ -1,0 +1,1158 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Project\VintageComputer\software\test\test.uvproj
+Project File Date:  03/05/2019
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 000DH
+Program Size: data=9.0 xdata=0 code=15
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 000DH
+Program Size: data=9.0 xdata=0 code=15
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 000DH
+Program Size: data=9.0 xdata=0 code=15
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?C_START
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 000DH
+Program Size: data=9.0 xdata=0 code=15
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(196): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?MAIN
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?MAIN
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 000DH
+Program Size: data=9.0 xdata=0 code=15
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?MAIN?MAIN
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?MAIN
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?MAIN
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0022H
+Program Size: data=9.0 xdata=0 code=36
+"test" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(196): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(38): error A1: ILLEGAL CHARACTER IN NUMERIC CONSTANT
+STARTUP.A51(46): error A1: ILLEGAL CHARACTER IN NUMERIC CONSTANT
+STARTUP.A51(196): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(38): error A1: ILLEGAL CHARACTER IN NUMERIC CONSTANT
+STARTUP.A51(46): error A1: ILLEGAL CHARACTER IN NUMERIC CONSTANT
+STARTUP.A51(196): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(196): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=0 code=59
+"test" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'test'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=59
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?C_START?MAIN
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  MAIN
+    MODULE:  E:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  MAIN
+    MODULE:  E:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+    ADDRESS: 0027H
+Program Size: data=9.0 xdata=0 code=188
+"test" - 0 Error(s), 3 Warning(s).
+Clean started: Project: 'test'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?C_START?MAIN
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  MAIN
+    MODULE:  E:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  MAIN
+    MODULE:  E:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+    ADDRESS: 0027H
+Program Size: data=9.0 xdata=0 code=188
+"test" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=39
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=11.0 xdata=0 code=45
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=11.0 xdata=0 code=54
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=0 code=62
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=0 code=68
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=0 code=72
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(144): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(149): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(154): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(124): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(125): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(126): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(114): error A32: ATTEMPT TO RESPECIFY MODUL NAME
+STARTUP.A51(115): error A32: ATTEMPT TO RESPECIFY MODUL NAME
+STARTUP.A51(116): error A32: ATTEMPT TO RESPECIFY MODUL NAME
+STARTUP.A51(127): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(128): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(129): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(123): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(124): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(125): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=0 code=87
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?EXIT_BOOT?MAIN
+Program Size: data=11.0 xdata=0 code=88
+"test" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  EXIT_BOOT
+    MODULE:  main.obj (MAIN)
+Program Size: data=11.0 xdata=0 code=87
+"test" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=11.0 xdata=0 code=87
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=0 code=87
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=0 code=87
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=18.0 xdata=0 code=229
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=18.0 xdata=0 code=229
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=9 code=240
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=9 code=240
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=9.0 xdata=9 code=240
+"test" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'test'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=9 code=240
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(207): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0039H
+Program Size: data=9.0 xdata=9 code=243
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling game2.c...
+compiling game3.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: K1AMC-J0NXJC
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+COMMON {"STARTUP.obj"},
+COMMON {"main.obj"},
+COMMON {"game2.obj"},
+COMMON {"game3.obj"} 
+TO "test" BankArea(0x4000,0xFFFF) 
+RAMSIZE(256) 
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  TERMINATE
+    MODULE:  game3.obj (GAME3)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  RUN
+    MODULE:  game3.obj (GAME3)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  INIT
+    MODULE:  game3.obj (GAME3)
+*** FATAL ERROR L210: I/O ERROR ON INPUT FILE:
+    EXCEPTION 0021H: PATH OR FILE NOT FOUND
+    FILE: E:\KEIL\C51\LIB\L51_BANK.OBJ
+Target not created
+Build target 'Target 1'
+compiling game0.c...
+compiling game1.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: K1AMC-J0NXJC
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+COMMON {"STARTUP.obj"},
+COMMON {"main.obj"},
+BANK2 {"game2.obj"},
+BANK3 {"game3.obj"},
+BANK0 {"game0.obj"},
+BANK1 {"game1.obj"} 
+TO "test" BankArea(0x4000,0xFFFF) 
+RAMSIZE(256) 
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  TERMINATE
+    MODULE:  game3.obj (GAME3)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  RUN
+    MODULE:  game3.obj (GAME3)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  INIT
+    MODULE:  game3.obj (GAME3)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  TERMINATE
+    MODULE:  game0.obj (GAME0)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  RUN
+    MODULE:  game0.obj (GAME0)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  INIT
+    MODULE:  game0.obj (GAME0)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  TERMINATE
+    MODULE:  game1.obj (GAME1)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  RUN
+    MODULE:  game1.obj (GAME1)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  INIT
+    MODULE:  game1.obj (GAME1)
+*** FATAL ERROR L210: I/O ERROR ON INPUT FILE:
+    EXCEPTION 0021H: PATH OR FILE NOT FOUND
+    FILE: E:\KEIL\C51\LIB\L51_BANK.OBJ
+Target not created
+Build target 'Target 1'
+compiling game2.c...
+compiling game3.c...
+compiling game0.c...
+compiling game1.c...
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: K1AMC-J0NXJC
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+COMMON {"STARTUP.obj"},
+COMMON {"main.obj"},
+BANK2 {"game2.obj"},
+BANK3 {"game3.obj"},
+BANK0 {"game0.obj"},
+BANK1 {"game1.obj"} 
+TO "test" BankArea(0x4000,0xFFFF) 
+RAMSIZE(256) 
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_RUN
+    MODULE:  game3.obj (GAME3)
+*** FATAL ERROR L210: I/O ERROR ON INPUT FILE:
+    EXCEPTION 0021H: PATH OR FILE NOT FOUND
+    FILE: E:\KEIL\C51\LIB\L51_BANK.OBJ
+Target not created
+Build target 'Target 1'
+linking...
+BL51 BANKED LINKER/LOCATER V6.22 - SN: K1AMC-J0NXJC
+COPYRIGHT KEIL ELEKTRONIK GmbH 1987 - 2009
+COMMON {"STARTUP.obj"},
+COMMON {"main.obj"},
+BANK2 {"game2.obj"},
+BANK3 {"game3.obj"},
+BANK0 {"game0.obj"},
+BANK1 {"game1.obj"} 
+TO "test" BankArea(0x4000,0xFFFF) 
+RAMSIZE(256) 
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_RUN
+    MODULE:  game3.obj (GAME3)
+*** FATAL ERROR L210: I/O ERROR ON INPUT FILE:
+    EXCEPTION 0021H: PATH OR FILE NOT FOUND
+    FILE: E:\KEIL\C51\LIB\L51_BANK.OBJ
+Target not created
+Build target 'Target 1'
+assembling L51_BANK.A51...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_RUN
+    MODULE:  game3.obj (GAME3)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME2_INIT?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME4_TERMINATE?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_TERMINATE?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_INIT?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_RUN?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_TERMINATE?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_INIT?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_RUN?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_TERMINATE?GAME1
+Program Size: data=10.0 xdata=9 code=408
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_RUN
+    MODULE:  game3.obj (GAME3)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME2_INIT?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME4_TERMINATE?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_TERMINATE?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_INIT?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_RUN?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_TERMINATE?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_INIT?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_RUN?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_TERMINATE?GAME1
+Program Size: data=10.0 xdata=2 code=392
+Target not created
+Build target 'Target 1'
+compiling main.c...
+compiling game2.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_RUN
+    MODULE:  game3.obj (GAME3)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_INIT
+    MODULE:  game3.obj (GAME3)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_TERMINATE?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_INIT?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_RUN?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_TERMINATE?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_INIT?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_RUN?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_TERMINATE?GAME1
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0127H
+*** ERROR L118: REFERENCE MADE TO ERRONEOUS EXTERNAL
+    SYMBOL:  GAME3_RUN
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 012AH
+Program Size: data=10.0 xdata=0 code=390
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_RUN
+    MODULE:  game3.obj (GAME3)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_INIT
+    MODULE:  game3.obj (GAME3)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME4_TERMINATE?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_TERMINATE?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_INIT?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_RUN?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_TERMINATE?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_INIT?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_RUN?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_TERMINATE?GAME1
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_TERMINATE
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_RUN
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 011DH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_RUN
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0120H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_TERMINATE
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0123H
+Program Size: data=10.0 xdata=0 code=380
+Target not created
+Clean started: Project: 'test'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+compiling game2.c...
+compiling game3.c...
+compiling game0.c...
+compiling game1.c...
+assembling L51_BANK.A51...
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_RUN
+    MODULE:  game3.obj (GAME3)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_INIT
+    MODULE:  game3.obj (GAME3)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME4_TERMINATE?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_TERMINATE?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_INIT?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_RUN?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_TERMINATE?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_INIT?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_RUN?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_TERMINATE?GAME1
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_TERMINATE
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_RUN
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 011DH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_RUN
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0120H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_TERMINATE
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0123H
+Program Size: data=10.0 xdata=0 code=380
+Target not created
+Build target 'Target 1'
+linking...
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_RUN
+    MODULE:  game3.obj (GAME3)
+*** ERROR L104: MULTIPLE PUBLIC DEFINITIONS
+    SYMBOL:  GAME3_INIT
+    MODULE:  game3.obj (GAME3)
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME4_TERMINATE?GAME2
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_INIT?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_RUN?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME3_TERMINATE?GAME3
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_INIT?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_RUN?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME0_TERMINATE?GAME0
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_INIT?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_RUN?GAME1
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?GAME1_TERMINATE?GAME1
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_TERMINATE
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_RUN
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 011CH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_RUN
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 011FH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_TERMINATE
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0122H
+Program Size: data=10.0 xdata=0 code=379
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0039H
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_TERMINATE
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_RUN
+    MODULE:  main.obj (MAIN)
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_INIT
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 004EH
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_RUN
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0051H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  GAME2_TERMINATE
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0054H
+Program Size: data=9.0 xdata=0 code=86
+"test" - 0 Error(s), 8 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0039H
+Program Size: data=9.0 xdata=0 code=78
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0039H
+Program Size: data=9.0 xdata=4 code=94
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0039H
+Program Size: data=9.0 xdata=4 code=94
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  ?B_SWITCH0
+    MODULE:  STARTUP.obj (?C_STARTUP)
+    ADDRESS: 0039H
+Program Size: data=9.0 xdata=4 code=94
+"test" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=4 code=91
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=4 code=214
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=4 code=249
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(8): warning C275: expression with possibly no effect
+linking...
+Program Size: data=9.0 xdata=4 code=247
+"test" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=9.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(147): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(172): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(180): error A8: ATTEMPT TO DEFINE AN ALREADY DEFINED LABEL
+STARTUP.A51(242): error A56: UNBALANCED IF-ENDIF CONTROLS
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(147): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=4 code=261
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=4 code=261
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=4 code=262
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=4 code=262
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=4 code=263
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=4 code=264
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=9.0 xdata=4 code=262
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(77): error A1: ILLEGAL CHARACTER IN NUMERIC CONSTANT
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=4 code=268
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=4 code=268
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=268
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=4 code=270
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=270
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'test'
+   deleting intermediate output files for target 'Target 1'
+Clean started: Project: 'test'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'test'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'test'
+   deleting intermediate output files for target 'Target 1'
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=11.0 xdata=4 code=265
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=11.0 xdata=4 code=265
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(2): error C202: 'a': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=15.0 xdata=4 code=268
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=15.0 xdata=4 code=268
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(199): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(199): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=268
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(130): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(215): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(120): error A32: ATTEMPT TO RESPECIFY MODUL NAME
+STARTUP.A51(131): error A45: UNDEFINED SYMBOL (PASS-2)
+STARTUP.A51(216): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(130): error A33: CONFLICTING ATTRIBUTES
+STARTUP.A51(215): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=271
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(214): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=271
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(130): error A45: UNDEFINED SYMBOL (PASS-2)
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=271
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=15.0 xdata=4 code=271
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=271
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(203): error A48: DATA-ADDRESS EXPECTED
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(203): error A9: SYNTAX ERROR
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=274
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=295
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=289
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(213): error A40: INVALID REGISTER
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=289
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=15.0 xdata=4 code=289
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=15.0 xdata=4 code=289
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=15.0 xdata=4 code=289
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=15.0 xdata=4 code=289
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=313
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=15.0 xdata=4 code=313
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(143): error A9: SYNTAX ERROR
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(143): error A9: SYNTAX ERROR
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(143): error A9: SYNTAX ERROR
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(143): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+STARTUP.A51(143): error A17: INVALID BYTE BASE IN BIT ADDRESS EXPRESSION
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+linking...
+Program Size: data=15.0 xdata=4 code=313
+creating hex file from "test"...
+"test" - 0 Error(s), 0 Warning(s).

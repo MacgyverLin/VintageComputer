@@ -1,0 +1,6 @@
+"STARTUP.obj",
+"main.obj" 
+TO "test" 
+RAMSIZE(256) 
+CODE( 0X0000-0XFFFE )
+XDATA( 0X4000-0XFFFF )

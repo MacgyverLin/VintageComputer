@@ -1,0 +1,40 @@
+C51 COMPILER V9.01   MAIN                                                                  03/05/2019 14:54:34 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: E:\Keil\C51\BIN\C51.EXE main.c LARGE BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          xdata char xa = 1;
+   2          xdata char* xap = &xa;
+   3          data char a = 1;
+   4          data char* ap = &a;
+   5          
+   6          void main()
+   7          {
+   8   1              while(1)
+   9   1              {
+  10   2                      (*ap)++;
+  11   2              }
+  12   1              
+  13   1              while(1)
+  14   1              {
+  15   2                      (*xap)++;
+  16   2              }       
+  17   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     13    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =      4    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
