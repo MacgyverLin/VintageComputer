@@ -19,15 +19,15 @@ GND
 Text HLabel 15800 1150 2    50   Input ~ 0
 +5V
 $Comp
-L Interface:8255 U6
+L Interface:8255 U1
 U 1 1 5DEE654C
 P 2750 3100
-AR Path="/5DED3C2A/5DEE654C" Ref="U6"  Part="1" 
+AR Path="/5DED3C2A/5DEE654C" Ref="U1"  Part="1" 
 AR Path="/5DFCE73E/5DEE654C" Ref="U?"  Part="1" 
 AR Path="/5E02D9A0/5DEE654C" Ref="U?"  Part="1" 
 AR Path="/5D59EC5C/5DEE654C" Ref="U?"  Part="1" 
 AR Path="/5D62F4AC/5DEE654C" Ref="U?"  Part="1" 
-F 0 "U6" H 2250 4600 50  0000 C CNN
+F 0 "U1" H 2250 4600 50  0000 C CNN
 F 1 "8255" H 3200 4600 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W15.24mm" H 2750 3400 50  0001 C CNN
 F 3 "http://aturing.umcs.maine.edu/~meadow/courses/cos335/Intel8255A.pdf" H 2750 3400 50  0001 C CNN
@@ -107,12 +107,12 @@ L 74xx:74LS138 U?
 U 1 1 5D73DAC7
 P 4750 3000
 AR Path="/5C68B4BB/5D73DAC7" Ref="U?"  Part="1" 
-AR Path="/5DED3C2A/5D73DAC7" Ref="U15"  Part="1" 
+AR Path="/5DED3C2A/5D73DAC7" Ref="U2"  Part="1" 
 AR Path="/5D59EC5C/5D73DAC7" Ref="U?"  Part="1" 
 AR Path="/5D62F4AC/5D73DAC7" Ref="U?"  Part="1" 
-F 0 "U15" H 4500 3450 50  0000 C CNN
+F 0 "U2" H 4500 3450 50  0000 C CNN
 F 1 "74LS138" H 5000 3450 50  0000 C CNN
-F 2 "" H 4750 3000 50  0001 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm_Socket" H 4750 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 4750 3000 50  0001 C CNN
 	1    4750 3000
 	1    0    0    -1  

@@ -30,28 +30,28 @@ Text HLabel 5500 2050 2    50   Input ~ 0
 D1
 Text HLabel 5500 1950 2    50   Input ~ 0
 D0
-Text HLabel 8850 4950 2    50   Input ~ 0
+Text HLabel 9300 4950 2    50   Input ~ 0
 GND
-Text HLabel 9050 950  2    50   Input ~ 0
+Text HLabel 9350 950  2    50   Input ~ 0
 +5V
 $Comp
-L Memory_EEPROM:28C256 U10
+L Memory_EEPROM:28C256 U6
 U 1 1 5E1802DB
 P 4850 2850
-F 0 "U10" H 4600 3900 50  0000 C CNN
+F 0 "U6" H 4600 3900 50  0000 C CNN
 F 1 "28C256" H 5100 3900 50  0000 C CNN
-F 2 "" H 4850 2850 50  0001 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 4850 2850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 4850 2850 50  0001 C CNN
 	1    4850 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Memory_EEPROM:28C256 U12
+L Memory_EEPROM:28C256 U7
 U 1 1 5E180348
 P 6650 2850
-F 0 "U12" H 6400 3900 50  0000 C CNN
+F 0 "U7" H 6400 3900 50  0000 C CNN
 F 1 "28C256" H 6900 3900 50  0000 C CNN
-F 2 "" H 6650 2850 50  0001 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 6650 2850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6650 2850 50  0001 C CNN
 	1    6650 2850
 	1    0    0    -1  
@@ -251,10 +251,10 @@ P 2750 2850
 AR Path="/5C68B4BB/5D5D1AF9" Ref="U?"  Part="1" 
 AR Path="/5DED3C2A/5D5D1AF9" Ref="U?"  Part="1" 
 AR Path="/5D59EC5C/5D5D1AF9" Ref="U?"  Part="1" 
-AR Path="/5E17A1DA/5D5D1AF9" Ref="U18"  Part="1" 
-F 0 "U18" H 2500 3300 50  0000 C CNN
+AR Path="/5E17A1DA/5D5D1AF9" Ref="U5"  Part="1" 
+F 0 "U5" H 2500 3300 50  0000 C CNN
 F 1 "74LS138" H 3000 3300 50  0000 C CNN
-F 2 "" H 2750 2850 50  0001 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm_Socket" H 2750 2850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 2750 2850 50  0001 C CNN
 	1    2750 2850
 	1    0    0    -1  
@@ -324,9 +324,9 @@ Wire Wire Line
 Connection ~ 6650 950 
 Connection ~ 6650 4950
 Wire Wire Line
-	6650 4950 8850 4950
+	6650 4950 8800 4950
 Wire Wire Line
-	6650 950  9050 950 
+	6650 950  8800 950 
 Text GLabel 4200 3750 0    50   Input ~ 0
 ~MEM0_CS
 Wire Wire Line
@@ -349,4 +349,132 @@ Connection ~ 2100 2750
 Connection ~ 2750 3600
 Wire Wire Line
 	2750 3600 2750 4950
+$Comp
+L Memory_EEPROM:28C256 U?
+U 1 1 5DBEF611
+P 8800 2850
+AR Path="/5C68B4BB/5DBEF611" Ref="U?"  Part="1" 
+AR Path="/5DED3C2A/5DBEF611" Ref="U?"  Part="1" 
+AR Path="/5E17A1DA/5DBEF611" Ref="U17"  Part="1" 
+F 0 "U17" H 8550 3900 50  0000 C CNN
+F 1 "28C256" H 9050 3900 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 8800 2850 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 8800 2850 50  0001 C CNN
+	1    8800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3350 7750 3350
+Wire Wire Line
+	8400 3250 7750 3250
+Wire Wire Line
+	8400 3150 7750 3150
+Wire Wire Line
+	8400 3050 7750 3050
+Wire Wire Line
+	8400 2950 7750 2950
+Wire Wire Line
+	8400 2850 7750 2850
+Wire Wire Line
+	8400 2750 7750 2750
+Text HLabel 7750 3350 0    50   Input ~ 0
+A14
+Text HLabel 7750 3250 0    50   Input ~ 0
+A13
+Text HLabel 7750 3150 0    50   Input ~ 0
+A12
+Text HLabel 7750 3050 0    50   Input ~ 0
+A11
+Text HLabel 7750 2950 0    50   Input ~ 0
+A10
+Text HLabel 7750 2850 0    50   Input ~ 0
+A9
+Text HLabel 7750 2750 0    50   Input ~ 0
+A8
+Wire Wire Line
+	8400 2650 7750 2650
+Wire Wire Line
+	7750 2550 8400 2550
+Wire Wire Line
+	8400 2450 7750 2450
+Wire Wire Line
+	7750 2350 8400 2350
+Wire Wire Line
+	8400 2250 7750 2250
+Wire Wire Line
+	7750 2150 8400 2150
+Wire Wire Line
+	8400 2050 7750 2050
+Text HLabel 7750 2650 0    50   Input ~ 0
+A7
+Text HLabel 7750 2550 0    50   Input ~ 0
+A6
+Text HLabel 7750 2450 0    50   Input ~ 0
+A5
+Text HLabel 7750 2350 0    50   Input ~ 0
+A4
+Text HLabel 7750 2250 0    50   Input ~ 0
+A3
+Text HLabel 7750 2150 0    50   Input ~ 0
+A2
+Text HLabel 7750 2050 0    50   Input ~ 0
+A1
+Text HLabel 7750 1950 0    50   Input ~ 0
+A0
+Wire Wire Line
+	8400 1950 7750 1950
+Text HLabel 9350 2650 2    50   Input ~ 0
+D7
+Text HLabel 9350 2550 2    50   Input ~ 0
+D6
+Text HLabel 9350 2450 2    50   Input ~ 0
+D5
+Text HLabel 9350 2350 2    50   Input ~ 0
+D4
+Text HLabel 9350 2250 2    50   Input ~ 0
+D3
+Text HLabel 9350 2150 2    50   Input ~ 0
+D2
+Text HLabel 9350 2050 2    50   Input ~ 0
+D1
+Text HLabel 9350 1950 2    50   Input ~ 0
+D0
+Wire Wire Line
+	9350 1950 9200 1950
+Wire Wire Line
+	9350 2050 9200 2050
+Wire Wire Line
+	9350 2150 9200 2150
+Wire Wire Line
+	9350 2250 9200 2250
+Wire Wire Line
+	9350 2350 9200 2350
+Wire Wire Line
+	9350 2450 9200 2450
+Wire Wire Line
+	9350 2550 9200 2550
+Wire Wire Line
+	9350 2650 9200 2650
+Wire Wire Line
+	7750 3550 8400 3550
+Wire Wire Line
+	8400 3650 7750 3650
+Wire Wire Line
+	8800 950  8800 1750
+Text HLabel 7750 3750 0    50   Input ~ 0
+~MEMRQ
+Wire Wire Line
+	8800 3950 8800 4950
+Wire Wire Line
+	7750 3750 8400 3750
+Text HLabel 7750 3650 0    50   Input ~ 0
+~RD_BIOS
+Text HLabel 7750 3550 0    50   Input ~ 0
+~WR_BIOS
+Connection ~ 8800 950 
+Connection ~ 8800 4950
+Wire Wire Line
+	8800 4950 9300 4950
+Wire Wire Line
+	8800 950  9350 950 
 $EndSCHEMATC
