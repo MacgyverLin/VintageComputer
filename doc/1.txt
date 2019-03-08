@@ -1,0 +1,68 @@
+IO ADDRESS = 1111 1111 0xxx xxxx (FF00-FF7F) 
+
+/BOOTING A15 /IO_CS     | /BIOS_CS /RAM_CS
+0        0     0        | 0         1
+0        0     1        | 0         1
+0        1     0        | 1         1
+0        1     1        | 1         0
+1        0     0        | 1         1
+1        0     1        | 1         0
+1        1     0        | 1         1      
+1        1     1        | 1         0
+
+/IO_CS   = /(A15 * A14 * A13 * A12 * A11 * A10 * A9 * A8 * A7')
+/BIOS_CS = /BOOTING + A15 = (/BOOTING' * A15')' = (BOOTING * /A15)'
+/RAM_CS  = /BOOTING' * A15' + /IO_CS' = ( ((BOOTING * A15')') * (/IO_CS) )'
+
+
+////////////////////////////////////////////////////////////////////////////////////
+/ISP /BOOTING  /WR /RD | /WR0 	  /RD0 	   /WR1    /RD1
+0    0         0   0   | x        x        x       x // NOT POSSIBLE
+0    0         0   1   | x        x        x       x // NOT POSSIBLE
+0    0         1   0   | x        x        x       x
+0    0         1   1   | x        x        x       x // NOT POSSIBLE
+
+0    1         0   0   | x        x        x       x // NOT POSSIBLE
+0    1         0   1   | 0        1        1       1 // ISP
+0    1         1   0   | 1        1        1       0
+0    1         1   1   | 1        1        1       1
+
+1    0         0   0   | x        x        x       x // NOT POSSIBLE
+1    0         0   1   | 1        1        0       1 // BOOTING
+1    0         1   0   | 1        0        1       1
+1    0         1   1   | 1        1        1       1
+
+1    1         0   0   | x        x        x       x // NOT POSSIBLE
+1    1         0   1   | 1        1        0       1 // NORMAL
+1    1         1   0   | 1        1        1       0
+1    1         1   1   | 1        1        1       1
+
+/IO_CS   = (A15 * A14 * A13 * A12 * A11 * A10 * A9 * A8 * A7')'
+
+/WR0 = /ISP + /WR
+
+/RD0 = /BOOTING + /RD
+
+/WR1 = /ISP' + /WR
+
+/RD1 = /BOOTING' + /RD
+
+
+/RAM_WR = /WR1 + /IO'
+
+/RAM_RD = /RD1 + /IO'
+
+/IO_WR = /WR1 + /IO
+
+/IO_RD = /RD1 + /IO
+
+quad 2-input NAND gate   74hc00 * 10
+quad 2-input NOR gate    74hc02 * 10
+hex inverter gate 	 74hc04 * 10
+quad 2-input AND gate    74hc08 * 10
+triple 3-input NAND gate 74hc10 * 10
+quad 2-input OR gate     74hc32 * 10
+octal transparent latch  74hc373 * 10
+single 8-input NAND gate 74hc30 * 10
+
+
