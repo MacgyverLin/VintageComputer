@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 8051-rescue)(type Legacy)(uri ${KIPRJMOD}/8051-rescue.lib)(options "")(descr ""))
+  (lib (name Vintage)(type Legacy)(uri E:/Project/VintageComputer/Hardware/Lib/Vintage.lib)(options "")(descr ""))
+)
