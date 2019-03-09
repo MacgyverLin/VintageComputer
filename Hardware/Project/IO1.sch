@@ -91,87 +91,16 @@ Wire Wire Line
 	2500 1200 2500 850 
 Connection ~ 2500 850 
 Wire Wire Line
-	2500 850  4500 850 
-Wire Wire Line
 	2500 4400 2500 4750
 Connection ~ 2500 4750
-Wire Wire Line
-	2500 4750 15500 4750
 Text HLabel 1500 1500 0    50   Input ~ 0
 RESET
 Wire Wire Line
 	1800 1500 1500 1500
-$Comp
-L 74xx:74LS138 U?
-U 1 1 5D59FABE
-P 4500 2700
-AR Path="/5C68B4BB/5D59FABE" Ref="U?"  Part="1" 
-AR Path="/5DED3C2A/5D59FABE" Ref="U?"  Part="1" 
-AR Path="/5D59EC5C/5D59FABE" Ref="U4"  Part="1" 
-F 0 "U4" H 4250 3150 50  0000 C CNN
-F 1 "74LS138" H 4750 3150 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm_Socket" H 4500 2700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 4500 2700 50  0001 C CNN
-	1    4500 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 2100 4500 2050
-Wire Wire Line
-	4500 3400 4500 4800
-Text HLabel 3800 2600 0    50   Input ~ 0
-A6
-Text HLabel 3800 2500 0    50   Input ~ 0
-A5
-Text HLabel 3800 2400 0    50   Input ~ 0
-A4
-Wire Wire Line
-	4000 2400 3800 2400
-Wire Wire Line
-	4000 2500 3800 2500
-Wire Wire Line
-	4000 2600 3800 2600
-Wire Wire Line
-	4000 3000 3950 3000
-Wire Wire Line
-	3950 3000 3950 3100
-Wire Wire Line
-	3950 3100 4000 3100
-Wire Wire Line
-	4000 2900 3950 2900
-Wire Wire Line
-	3950 2900 3950 2050
-Wire Wire Line
-	3950 2050 4500 2050
-Connection ~ 4500 2050
-Wire Wire Line
-	4500 2050 4500 850 
-Connection ~ 3950 3100
-Wire Wire Line
-	5100 2400 5000 2400
-Text HLabel 3800 3100 0    50   Input ~ 0
-~IORQ
-Wire Wire Line
-	3800 3100 3950 3100
-Text GLabel 5100 2500 2    50   Input ~ 0
-~IO1_CS
-Wire Wire Line
-	5100 2500 5000 2500
-Wire Wire Line
-	5100 2600 5000 2600
-Wire Wire Line
-	5100 2700 5000 2700
-Wire Wire Line
-	5100 2800 5000 2800
-Wire Wire Line
-	5100 2900 5000 2900
-Wire Wire Line
-	5100 3000 5000 3000
-Wire Wire Line
-	5100 3100 5000 3100
 Text GLabel 1500 1800 0    50   Input ~ 0
 ~IO1_CS
-Connection ~ 4500 850 
 Wire Wire Line
-	4500 850  15550 850 
+	2500 4750 15500 4750
+Wire Wire Line
+	2500 850  15550 850 
 $EndSCHEMATC
