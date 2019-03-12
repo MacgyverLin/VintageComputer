@@ -40,7 +40,7 @@ U 1 1 5E1802DB
 P 4850 2850
 F 0 "U6" H 4600 3900 50  0000 C CNN
 F 1 "28C256" H 5100 3900 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 4850 2850 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 4850 2850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 4850 2850 50  0001 C CNN
 	1    4850 2850
 	1    0    0    -1  
@@ -51,7 +51,7 @@ U 1 1 5E180348
 P 6650 2850
 F 0 "U7" H 6400 3900 50  0000 C CNN
 F 1 "28C256" H 6900 3900 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 6650 2850 50  0001 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm_Socket" H 6650 2850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6650 2850 50  0001 C CNN
 	1    6650 2850
 	1    0    0    -1  
@@ -315,12 +315,12 @@ Wire Wire Line
 Wire Wire Line
 	4850 950  2750 950 
 Wire Wire Line
-	2750 950  2750 2200
+	2750 950  2750 1150
 Connection ~ 4850 950 
 Wire Wire Line
-	4850 950  4850 1750
+	4850 950  4850 1150
 Wire Wire Line
-	6650 950  6650 1750
+	6650 950  6650 1150
 Connection ~ 6650 950 
 Connection ~ 6650 4950
 Text GLabel 4200 3750 0    50   Input ~ 0
@@ -349,4 +349,91 @@ Wire Wire Line
 	6650 950  9350 950 
 Wire Wire Line
 	6650 4950 9300 4950
+$Comp
+L Device:C C?
+U 1 1 5D172A2A
+P 6900 1350
+AR Path="/5D172A2A" Ref="C?"  Part="1" 
+AR Path="/5C68B4BB/5D172A2A" Ref="C?"  Part="1" 
+AR Path="/5C8BEFCF/5D172A2A" Ref="C?"  Part="1" 
+AR Path="/5DED3C2A/5D172A2A" Ref="C?"  Part="1" 
+AR Path="/5E17A1DA/5D172A2A" Ref="C8"  Part="1" 
+F 0 "C8" V 6950 1450 50  0000 L CNN
+F 1 "1uf" V 6950 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6938 1200 50  0001 C CNN
+F 3 "~" H 6900 1350 50  0001 C CNN
+	1    6900 1350
+	-1   0    0    -1  
+$EndComp
+Text HLabel 6950 1550 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6900 1500 6900 1550
+Wire Wire Line
+	6900 1550 6950 1550
+Wire Wire Line
+	6900 1200 6900 1150
+Wire Wire Line
+	6900 1150 6650 1150
+Connection ~ 6650 1150
+Wire Wire Line
+	6650 1150 6650 1750
+$Comp
+L Device:C C?
+U 1 1 5D17D24F
+P 5100 1350
+AR Path="/5D17D24F" Ref="C?"  Part="1" 
+AR Path="/5C68B4BB/5D17D24F" Ref="C?"  Part="1" 
+AR Path="/5C8BEFCF/5D17D24F" Ref="C?"  Part="1" 
+AR Path="/5DED3C2A/5D17D24F" Ref="C?"  Part="1" 
+AR Path="/5E17A1DA/5D17D24F" Ref="C7"  Part="1" 
+F 0 "C7" V 5150 1450 50  0000 L CNN
+F 1 "1uf" V 5150 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5138 1200 50  0001 C CNN
+F 3 "~" H 5100 1350 50  0001 C CNN
+	1    5100 1350
+	-1   0    0    -1  
+$EndComp
+Text HLabel 5150 1550 2    50   Input ~ 0
+GND
+Wire Wire Line
+	5100 1500 5100 1550
+Wire Wire Line
+	5100 1550 5150 1550
+Wire Wire Line
+	5100 1200 5100 1150
+Wire Wire Line
+	5100 1150 4850 1150
+Connection ~ 4850 1150
+Wire Wire Line
+	4850 1150 4850 1750
+$Comp
+L Device:C C?
+U 1 1 5D18843B
+P 3000 1350
+AR Path="/5D18843B" Ref="C?"  Part="1" 
+AR Path="/5C68B4BB/5D18843B" Ref="C?"  Part="1" 
+AR Path="/5C8BEFCF/5D18843B" Ref="C?"  Part="1" 
+AR Path="/5DED3C2A/5D18843B" Ref="C?"  Part="1" 
+AR Path="/5E17A1DA/5D18843B" Ref="C6"  Part="1" 
+F 0 "C6" V 3050 1450 50  0000 L CNN
+F 1 "1uf" V 3050 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 1200 50  0001 C CNN
+F 3 "~" H 3000 1350 50  0001 C CNN
+	1    3000 1350
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3050 1550 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3000 1500 3000 1550
+Wire Wire Line
+	3000 1550 3050 1550
+Wire Wire Line
+	3000 1200 3000 1150
+Wire Wire Line
+	3000 1150 2750 1150
+Connection ~ 2750 1150
+Wire Wire Line
+	2750 1150 2750 2200
 $EndSCHEMATC

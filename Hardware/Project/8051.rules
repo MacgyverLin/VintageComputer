@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2510)
+    (start_pass_no 6594)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -46,11 +46,17 @@
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
+  (via 
+    "Via[0-1]_800:400_um-POWER" "Via[0-1]_800:400_um" POWER
+  )
   (via_rule
     default "Via[0-1]_800:400_um"
   )
   (via_rule
     "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    POWER "Via[0-1]_800:400_um-POWER"
   )
   (class default
     (clearance_class default)
@@ -64,28 +70,40 @@
   )
   (class "kicad_default"
     "Net-(C4-Pad1)" "~ENTER_ISP" ~RESET "Net-(Q1-Pad2)" "~WARM_BOOT" "~CPU_WR" "~CPU_RD" "~IO3_CS"
-    "~IO2_CS" "Net-(U10-Pad12)" "Net-(U10-Pad10)" "Net-(U1-Pad1)" "Net-(U1-Pad21)" "Net-(U1-Pad2)" "Net-(U1-Pad22)" "Net-(U1-Pad3)"
-    "Net-(U1-Pad23)" "Net-(U1-Pad4)" "Net-(U1-Pad24)" "Net-(U1-Pad25)" "~IO0_CS" "Net-(U1-Pad10)" "Net-(U1-Pad11)" "Net-(U1-Pad12)"
-    "Net-(U1-Pad13)" "Net-(U1-Pad14)" "Net-(U1-Pad15)" "Net-(U1-Pad16)" "Net-(U1-Pad17)" "Net-(U1-Pad37)" "Net-(U1-Pad18)" "Net-(U1-Pad38)"
-    "Net-(U1-Pad19)" "Net-(U1-Pad39)" "Net-(U1-Pad20)" "Net-(U1-Pad40)" "~IO1_CS" "~MEM0_CS" "~MEM1_CS" "~IO7_CS"
-    "~IO6_CS" "~IO4_CS" "~IO5_CS" "Net-(U5-Pad10)" "Net-(U5-Pad11)" "Net-(U5-Pad12)" "Net-(U5-Pad13)" "Net-(U5-Pad7)"
-    "Net-(U5-Pad9)" BOOTING ISP ~ISP ~BOOTING "Net-(U9-Pad14)" "Net-(U9-Pad8)" "Net-(Q2-Pad2)"
-    "Net-(D4-Pad2)" "Net-(D3-Pad2)" "Net-(U13-Pad1)" "Net-(U13-Pad2)" "Net-(U13-Pad3)" "Net-(U13-Pad4)" "Net-(U13-Pad5)" "Net-(U13-Pad6)"
-    "Net-(U13-Pad7)" "Net-(U13-Pad8)" "Net-(U13-Pad29)" "Net-(U13-Pad10)" "Net-(U13-Pad30)" "Net-(U13-Pad11)" "Net-(U13-Pad12)" "Net-(U13-Pad13)"
-    "Net-(U13-Pad14)" "Net-(U13-Pad15)" "Net-(U13-Pad17)" "~RD_BIOS" "~WR_BIOS" "Net-(U10-Pad11)" "Net-(U10-Pad7)" "Net-(U10-Pad9)"
-    "Net-(U19-Pad8)" "Net-(J1-Pad2)" "Net-(J1-Pad3)" "Net-(J1-Pad4)" "Net-(U9-Pad4)" "Net-(U9-Pad6)" "Net-(U9-Pad10)" "Net-(U9-Pad12)"
-    "Net-(U9-Pad16)" "Net-(U9-Pad18)" "Net-(U9-Pad21)" "Net-(U9-Pad27)" "Net-(U9-Pad31)" "Net-(U9-Pad32)" /+5V "Net-(U12-Pad13)"
-    /~D0 /~D1 /~D2 /~D3 /~D4 /~D5 /~D6 /~D7
-    /RESET /GND /~A8 /~A9 /~A10 /~A11 /~A12 /~A13
-    /~A14 /~A15 /~RD /~A1 /~A0 /~WR /~A7 /~A6
-    /~A5 /~A4 /~A3 /~A2 /~MEMRQ /~IORQ "Net-(J2-Pad30)" "Net-(J2-Pad31)"
-    "Net-(J2-Pad32)" "Net-(J2-Pad33)" "Net-(J2-Pad34)" "Net-(J2-Pad35)" "Net-(J2-Pad36)" "Net-(J2-Pad37)" "Net-(J2-Pad38)" "Net-(J2-Pad39)"
-    "Net-(R23-Pad2)" "Net-(R20-Pad2)" "Net-(Q2-Pad1)" "Net-(D10-Pad2)" "Net-(R21-Pad2)" "Net-(R3-Pad1)" "Net-(D2-Pad2)" "Net-(C3-Pad1)"
-    "Net-(D10-Pad1)" "Net-(JP1-Pad2)"
+    "~IO2_CS" "Net-(U10-Pad12)" "Net-(U10-Pad10)" "Net-(U1-Pad21)" "Net-(U1-Pad22)" "Net-(U1-Pad23)" "Net-(U1-Pad24)" "Net-(U1-Pad25)"
+    "~IO0_CS" "Net-(U1-Pad10)" "Net-(U1-Pad11)" "Net-(U1-Pad12)" "Net-(U1-Pad13)" "Net-(U1-Pad14)" "Net-(U1-Pad15)" "Net-(U1-Pad16)"
+    "Net-(U1-Pad17)" "Net-(U1-Pad37)" "Net-(U1-Pad38)" "Net-(U1-Pad39)" "Net-(U1-Pad20)" "Net-(U1-Pad40)" "~IO1_CS" "~MEM0_CS"
+    "~MEM1_CS" "~IO7_CS" "~IO6_CS" "~IO4_CS" "~IO5_CS" "Net-(U5-Pad10)" "Net-(U5-Pad11)" "Net-(U5-Pad12)"
+    "Net-(U5-Pad13)" "Net-(U5-Pad7)" "Net-(U5-Pad9)" BOOTING ISP ~ISP ~BOOTING "Net-(U9-Pad14)"
+    "Net-(U9-Pad8)" "Net-(Q2-Pad2)" "Net-(D4-Pad2)" "Net-(D3-Pad2)" "Net-(U13-Pad1)" "Net-(U13-Pad2)" "Net-(U13-Pad3)" "Net-(U13-Pad4)"
+    "Net-(U13-Pad5)" "Net-(U13-Pad6)" "Net-(U13-Pad7)" "Net-(U13-Pad8)" "Net-(U13-Pad29)" "Net-(U13-Pad10)" "Net-(U13-Pad30)" "Net-(U13-Pad11)"
+    "Net-(U13-Pad17)" "~RD_BIOS" "~WR_BIOS" "Net-(U10-Pad11)" "Net-(U10-Pad7)" "Net-(U10-Pad9)" "Net-(U19-Pad8)" "Net-(J1-Pad2)"
+    "Net-(J1-Pad3)" "Net-(J1-Pad4)" "Net-(U9-Pad4)" "Net-(U9-Pad6)" "Net-(U9-Pad10)" "Net-(U9-Pad12)" "Net-(U9-Pad16)" "Net-(U9-Pad18)"
+    "Net-(U9-Pad21)" "Net-(U9-Pad27)" "Net-(U9-Pad31)" "Net-(U9-Pad32)" /~D0 /~D1 /~D2 /~D3
+    /~D4 /~D5 /~D6 /~D7 /RESET /~A8 /~A9 /~A10
+    /~A11 /~A12 /~A13 /~A14 /~A15 /~RD /~A1 /~A0
+    /~WR /~A7 /~A6 /~A5 /~A4 /~A3 /~A2 /~MEMRQ
+    /~IORQ "Net-(J2-Pad30)" "Net-(J2-Pad31)" "Net-(J2-Pad32)" "Net-(J2-Pad33)" "Net-(J2-Pad34)" "Net-(J2-Pad35)" "Net-(J2-Pad36)"
+    "Net-(J2-Pad37)" "Net-(J2-Pad38)" "Net-(R23-Pad2)" "Net-(R20-Pad2)" "Net-(Q2-Pad1)" "Net-(D10-Pad2)" "Net-(R21-Pad2)" "Net-(R3-Pad1)"
+    "Net-(D2-Pad2)" "Net-(C3-Pad1)" "Net-(D10-Pad1)" "Net-(JP1-Pad2)" "Net-(SW2-Pad4)" "Net-(C1-Pad1)" "Net-(SW2-Pad5)" "Net-(SW2-Pad3)"
+    "Net-(SW2-Pad6)" "Net-(R6-Pad1)" "MOUSE_CLK" "KEYBOARD_CLK" "Net-(R4-Pad1)" "Net-(R5-Pad1)" "KEYBOARD_DAT" "MOUSE_DAT"
+    "Net-(R7-Pad1)" "PSX_CMD" "PSX_CLK" "~PSX_SEL_1" "~PSX_SEL_0" "~PSX_ACK" "PSX_DAT" "Net-(J3-Pad3)"
+    "Net-(J3-Pad8)" "Net-(J4-Pad8)" "Net-(J4-Pad3)" "Net-(U3-Pad8)" "Net-(U3-Pad2)" "Net-(U3-Pad6)" "Net-(U3-Pad12)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class POWER
+    /+5V /GND
+    (clearance_class POWER)
+    (via_rule POWER)
+    (rule
+      (width 400.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
