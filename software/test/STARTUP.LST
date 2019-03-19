@@ -1,9 +1,9 @@
-A51 MACRO ASSEMBLER  STARTUP                                                              03/05/2019 15:16:24 PAGE     1
+A51 MACRO ASSEMBLER  STARTUP                                                              03/19/2019 14:18:14 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.02
 OBJECT MODULE PLACED IN STARTUP.OBJ
-ASSEMBLER INVOKED BY: E:\Keil\C51\BIN\A51.EXE STARTUP.A51 SET(LARGE) DEBUG EP
+ASSEMBLER INVOKED BY: E:\Keil\C51\BIN\A51.EXE STARTUP.A51 SET(SMALL) DEBUG EP
 
 LOC  OBJ            LINE     SOURCE
 
@@ -65,7 +65,7 @@ LOC  OBJ            LINE     SOURCE
                       56     ;
                       57     ;<h> Reentrant Stack Initialization
                       58     ;
-A51 MACRO ASSEMBLER  STARTUP                                                              03/05/2019 15:16:24 PAGE     2
+A51 MACRO ASSEMBLER  STARTUP                                                              03/19/2019 14:18:14 PAGE     2
 
                       59     ;  The following EQU statements define the stack pointer for reentrant
                       60     ;  functions and initialized it:
@@ -133,7 +133,7 @@ LOC  OBJ            LINE     SOURCE
                      122     
                      123                     NAME    ?C_STARTUP
                      124     
-A51 MACRO ASSEMBLER  STARTUP                                                              03/05/2019 15:16:24 PAGE     3
+A51 MACRO ASSEMBLER  STARTUP                                                              03/19/2019 14:18:14 PAGE     3
 
                      125     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
                      126     ?STACK          SEGMENT   IDATA
@@ -201,7 +201,7 @@ LOC  OBJ            LINE     SOURCE
                                              MOV     ?C_IBP,#LOW IBPSTACKTOP
                              ENDIF
                      190     
-A51 MACRO ASSEMBLER  STARTUP                                                              03/05/2019 15:16:24 PAGE     4
+A51 MACRO ASSEMBLER  STARTUP                                                              03/19/2019 14:18:14 PAGE     4
 
 0029 75A010          191                                     MOV             P2, #10h
                      192     IF XBPSTACK <> 0
@@ -269,7 +269,7 @@ LOC  OBJ            LINE     SOURCE
 006D F0              254                                     MOVX    @DPTR, A
                      255                                     ; MOV           P1, #80h
 006E 22              256                                     RET
-A51 MACRO ASSEMBLER  STARTUP                                                              03/05/2019 15:16:24 PAGE     5
+A51 MACRO ASSEMBLER  STARTUP                                                              03/19/2019 14:18:14 PAGE     5
 
                      257     
 006F 90FF72          258     C_WARM_BOOT:    MOV             DPTR, #0ff72h
@@ -277,7 +277,7 @@ LOC  OBJ            LINE     SOURCE
 0073 22              260                                     RET
                      261                                     
                      262                     END
-A51 MACRO ASSEMBLER  STARTUP                                                              03/05/2019 15:16:24 PAGE     6
+A51 MACRO ASSEMBLER  STARTUP                                                              03/19/2019 14:18:14 PAGE     6
 
 SYMBOL TABLE LISTING
 ------ ----- -------

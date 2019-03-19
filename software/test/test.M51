@@ -1,19 +1,18 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        03/05/2019  15:16:24  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/19/2019  14:18:14  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
 E:\KEIL\C51\BIN\BL51.EXE STARTUP.obj, main.obj TO test RAMSIZE (256) CODE (0X0000-0XFFFE) XDATA (0X4000-0XFFFF)
 
 
-MEMORY MODEL: LARGE
+MEMORY MODEL: SMALL
 
 
 INPUT MODULES INCLUDED:
   STARTUP.obj (?C_STARTUP)
   main.obj (MAIN)
-  E:\KEIL\C51\LIB\C51L.LIB (?C_INIT)
-  E:\KEIL\C51\LIB\C51L.LIB (?C?CILDPTR)
-  E:\KEIL\C51\LIB\C51L.LIB (?C_XBP)
+  E:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+  E:\KEIL\C51\LIB\C51S.LIB (?C_XBP)
 
 
 LINK MAP OF MODULE:  test (?C_STARTUP)
@@ -35,9 +34,8 @@ LINK MAP OF MODULE:  test (?C_STARTUP)
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
             CODE    0003H     00F4H     UNIT         ?C_C51STARTUP
-            CODE    00F7H     0022H     UNIT         ?C?LIB_CODE
-            CODE    0119H     0013H     UNIT         ?C_INITSEG
-            CODE    012CH     000DH     UNIT         ?PR?MAIN?MAIN
+            CODE    00F7H     0013H     UNIT         ?C_INITSEG
+            CODE    010AH     0012H     UNIT         ?PR?MAIN?MAIN
 
 
 
@@ -59,11 +57,11 @@ SYMBOL TABLE OF MODULE:  test (?C_STARTUP)
   ----------------------------------
 
   -------         MODULE        ?C_STARTUP
-BL51 BANKED LINKER/LOCATER V6.22                                                      03/05/2019  15:16:24  PAGE 2
-
-
   I:000EH         SEGMENT       ?STACK
   C:0003H         SEGMENT       ?C_C51STARTUP
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/19/2019  14:18:14  PAGE 2
+
+
   C:0000H         PUBLIC        ?C_STARTUP
   D:00E0H         SYMBOL        ACC
   D:00F0H         SYMBOL        B
@@ -119,11 +117,11 @@ SYMBOL TABLE OF MODULE:  test (?C_STARTUP)
   C:0025H         LINE#         179
   C:0026H         LINE#         180
   C:0027H         LINE#         181
-BL51 BANKED LINKER/LOCATER V6.22                                                      03/05/2019  15:16:24  PAGE 3
-
-
   C:0029H         LINE#         184
   C:002CH         LINE#         191
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/19/2019  14:18:14  PAGE 3
+
+
   C:002FH         LINE#         195
   C:0032H         LINE#         196
   C:0035H         LINE#         199
@@ -160,31 +158,39 @@ SYMBOL TABLE OF MODULE:  test (?C_STARTUP)
 
   -------         MODULE        MAIN
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:012CH         PUBLIC        main
+  D:0090H         PUBLIC        P1
+  B:0090H.0       PUBLIC        P1_0
+  B:0090H.1       PUBLIC        P1_1
+  B:0090H.2       PUBLIC        P1_2
+  B:0090H.3       PUBLIC        P1_3
+  C:010AH         PUBLIC        main
   X:4000H         PUBLIC        xap
   D:0008H         PUBLIC        ap
   X:4003H         PUBLIC        xa
   D:000BH         PUBLIC        a
   -------         PROC          MAIN
-  C:012CH         LINE#         6
-  C:012CH         LINE#         7
-  C:012CH         LINE#         8
-  C:012CH         LINE#         9
-  C:012CH         LINE#         10
-  C:0137H         LINE#         11
+  C:010AH         LINE#         13
+  C:010AH         LINE#         14
+  C:010AH         LINE#         15
+  C:010AH         LINE#         16
+  C:010AH         LINE#         17
+  C:010CH         LINE#         18
+  C:010EH         LINE#         19
+  C:0110H         LINE#         20
+  C:0112H         LINE#         22
+  C:0114H         LINE#         23
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/19/2019  14:18:14  PAGE 4
+
+
+  C:0116H         LINE#         24
+  C:0118H         LINE#         25
+  C:011AH         LINE#         26
   -------         ENDPROC       MAIN
   -------         ENDMOD        MAIN
-
-  -------         MODULE        ?C?CILDPTR
-  C:00F7H         PUBLIC        ?C?CILDPTR
-  -------         ENDMOD        ?C?CILDPTR
-
-BL51 BANKED LINKER/LOCATER V6.22                                                      03/05/2019  15:16:24  PAGE 4
-
 
   -------         MODULE        ?C_XBP
   D:000CH         PUBLIC        ?C_XBP
   -------         ENDMOD        ?C_XBP
 
-Program Size: data=15.0 xdata=4 code=313
+Program Size: data=15.0 xdata=4 code=284
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
