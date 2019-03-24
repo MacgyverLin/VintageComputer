@@ -223,61 +223,55 @@ $EndComp
 Text Notes 10500 4450 0    50   ~ 0
 IO ADDRESS = 1111 1111 0xxx xxxx (FF00-FF7F) \n\n///////////////////////////////////////////////////////\n/ISP /BOOTING  /WR /RD | /WR0 	  /RD0 	   /WR1    /RD1\n0    0            0   0   | x        x        x       x // NOT POSSIBLE\n0    0            0   1   | x        x        x       x // NOT POSSIBLE\n0    0            1   0   | x        x        x       x\n0    0            1   1   | x        x        x       x // NOT POSSIBLE\n\n0    1            0   0   | x        x        x       x // NOT POSSIBLE\n0    1            0   1   | 0        1        1       1 // ISP\n0    1            1   0   | 1        1        1       0\n0    1            1   1   | 1        1        1       1\n\n1    0            0   0   | x        x        x       x // NOT POSSIBLE\n1    0            0   1   | 1        1        0       1 // BOOTING\n1    0            1   0   | 1        0        1       1\n1    0            1   1   | 1        1        1       1\n\n1    1            0   0   | x        x        x       x // NOT POSSIBLE\n1    1            0   1   | 1        1        0       1 // NORMAL\n1    1            1   0   | 1        1        1       0\n1    1            1   1   | 1        1        1       1\n\n/IO_CS   = (A15 * A14 * A13 * A12 * A11 * A10 * A9 * A8)' + A7\n/WR0 = /ISP + /WR\n/RD0 = /BOOTING + /RD\n/WR1 = /ISP' + /WR\n/RD1 = /BOOTING' + /RD
 Wire Wire Line
-	6100 6350 6200 6350
-Text GLabel 6200 6350 2    50   Input ~ 0
+	6650 6350 6750 6350
+Text GLabel 6750 6350 2    50   Input ~ 0
 BOOTING
-Text GLabel 4850 5750 0    50   Input ~ 0
-~EXIT_BOOT
-Text Label 5350 5750 0    50   ~ 0
-~S
-Text Label 5350 6550 0    50   ~ 0
-~R
-Text GLabel 6200 5850 2    50   Input ~ 0
+Text GLabel 6750 5850 2    50   Input ~ 0
 ~BOOTING
 Wire Wire Line
-	5250 6250 5400 6250
+	5800 6250 5950 6250
 Wire Wire Line
-	5250 6050 5250 6250
+	5800 6050 5800 6250
 Wire Wire Line
-	6100 6050 5250 6050
+	6650 6050 5800 6050
 Wire Wire Line
-	6100 5850 6100 6050
+	6650 5850 6650 6050
 Wire Wire Line
-	6000 5850 6100 5850
+	6550 5850 6650 5850
 Wire Wire Line
-	6100 6350 6000 6350
+	6650 6350 6550 6350
 Wire Wire Line
-	6100 6150 6100 6350
+	6650 6150 6650 6350
 Wire Wire Line
-	5300 6150 6100 6150
+	5850 6150 6650 6150
 Wire Wire Line
-	5300 5950 5300 6150
+	5850 5950 5850 6150
 Wire Wire Line
-	5400 5950 5300 5950
+	5950 5950 5850 5950
 $Comp
 L 74xx:74LS00 U12
 U 2 1 5CAFC56D
-P 5700 6350
+P 6250 6350
 AR Path="/5C68B4BB/5CAFC56D" Ref="U12"  Part="2" 
 AR Path="/5DED3C2A/5CAFC56D" Ref="U?"  Part="2" 
-F 0 "U12" H 5950 6250 50  0000 C CNN
-F 1 "74LS00" H 5700 6150 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5700 6350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5700 6350 50  0001 C CNN
-	2    5700 6350
+F 0 "U12" H 6500 6250 50  0000 C CNN
+F 1 "74LS00" H 6250 6150 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6250 6350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 6250 6350 50  0001 C CNN
+	2    6250 6350
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS00 U12
 U 1 1 5CAFC472
-P 5700 5850
+P 6250 5850
 AR Path="/5C68B4BB/5CAFC472" Ref="U12"  Part="1" 
 AR Path="/5DED3C2A/5CAFC472" Ref="U?"  Part="1" 
-F 0 "U12" H 5950 5750 50  0000 C CNN
-F 1 "74LS00" H 5650 6050 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5700 5850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5700 5850 50  0001 C CNN
-	1    5700 5850
+F 0 "U12" H 6500 5750 50  0000 C CNN
+F 1 "74LS00" H 6200 6050 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6250 5850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 6250 5850 50  0001 C CNN
+	1    6250 5850
 	1    0    0    -1  
 $EndComp
 Text GLabel 10050 1100 2    50   Input ~ 0
@@ -363,21 +357,6 @@ Wire Wire Line
 Wire Wire Line
 	1500 5900 1500 5300
 Connection ~ 1500 5900
-$Comp
-L 74xx:74LS138 U10
-U 1 1 5C80E774
-P 3450 6450
-AR Path="/5C68B4BB/5C80E774" Ref="U10"  Part="1" 
-AR Path="/5DED3C2A/5C80E774" Ref="U?"  Part="1" 
-AR Path="/5D59EC5C/5C80E774" Ref="U?"  Part="1" 
-AR Path="/5D62F4AC/5C80E774" Ref="U?"  Part="1" 
-F 0 "U10" H 3200 6900 50  0000 C CNN
-F 1 "74LS138" H 3700 6900 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 3450 6450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 3450 6450 50  0001 C CNN
-	1    3450 6450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3450 5850 3450 5800
 Text HLabel 2750 6350 0    50   Input ~ 0
@@ -398,24 +377,8 @@ Wire Wire Line
 	2900 6650 2900 5800
 Wire Wire Line
 	2900 5800 3450 5800
-Text GLabel 4050 6150 2    50   Input ~ 0
-~EXIT_BOOT
-Wire Wire Line
-	4050 6150 3950 6150
-Wire Wire Line
-	4050 6250 3950 6250
 Wire Wire Line
 	4050 6350 3950 6350
-Wire Wire Line
-	4050 6450 3950 6450
-Wire Wire Line
-	4050 6550 3950 6550
-Wire Wire Line
-	4050 6650 3950 6650
-Wire Wire Line
-	4050 6750 3950 6750
-Wire Wire Line
-	4050 6850 3950 6850
 Wire Wire Line
 	3450 5800 3450 5300
 Connection ~ 3450 5800
@@ -467,12 +430,12 @@ $EndComp
 $Comp
 L 74xx:74LS32 U18
 U 1 1 5C8F18A8
-P 9150 5700
-F 0 "U18" H 9350 5850 50  0000 C CNN
-F 1 "74LS32" H 9450 5650 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9150 5700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9150 5700 50  0001 C CNN
-	1    9150 5700
+P 9700 5650
+F 0 "U18" H 9900 5800 50  0000 C CNN
+F 1 "74LS32" H 10000 5600 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9700 5650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9700 5650 50  0001 C CNN
+	1    9700 5650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -496,68 +459,68 @@ Wire Wire Line
 	12000 1550 11950 1550
 Wire Wire Line
 	10700 1150 12100 1150
-Text GLabel 8600 5600 0    50   Input ~ 0
+Text GLabel 9150 5550 0    50   Input ~ 0
 ~ISP
-Text GLabel 8000 5800 0    50   Input ~ 0
+Text GLabel 8550 5750 0    50   Input ~ 0
 ~CPU_WR
 Wire Wire Line
-	8850 5600 8600 5600
+	9400 5550 9150 5550
 $Comp
 L 74xx:74LS32 U18
 U 2 1 5C8F18C5
-P 9150 6050
-F 0 "U18" H 9350 6200 50  0000 C CNN
-F 1 "74LS32" H 9450 6000 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9150 6050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9150 6050 50  0001 C CNN
-	2    9150 6050
+P 9700 6000
+F 0 "U18" H 9900 6150 50  0000 C CNN
+F 1 "74LS32" H 10000 5950 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9700 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9700 6000 50  0001 C CNN
+	2    9700 6000
 	1    0    0    -1  
 $EndComp
-Text GLabel 8600 5950 0    50   Input ~ 0
+Text GLabel 9150 5900 0    50   Input ~ 0
 ~BOOTING
 Wire Wire Line
-	8850 5950 8600 5950
+	9400 5900 9150 5900
 Wire Wire Line
-	9450 5700 9700 5700
+	10000 5650 10250 5650
 Wire Wire Line
-	9450 6050 9700 6050
+	10000 6000 10250 6000
 $Comp
 L 74xx:74LS32 U18
 U 3 1 5C8F18D6
-P 9150 6450
-F 0 "U18" H 9350 6600 50  0000 C CNN
-F 1 "74LS32" H 9450 6400 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9150 6450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9150 6450 50  0001 C CNN
-	3    9150 6450
+P 9700 6400
+F 0 "U18" H 9900 6550 50  0000 C CNN
+F 1 "74LS32" H 10000 6350 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9700 6400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9700 6400 50  0001 C CNN
+	3    9700 6400
 	1    0    0    -1  
 $EndComp
-Text GLabel 8600 6350 0    50   Input ~ 0
+Text GLabel 9150 6300 0    50   Input ~ 0
 ISP
 Wire Wire Line
-	8850 6350 8600 6350
+	9400 6300 9150 6300
 $Comp
 L 74xx:74LS32 U18
 U 4 1 5C8F18E1
-P 9150 6800
-F 0 "U18" H 9350 6950 50  0000 C CNN
-F 1 "74LS32" H 9450 6750 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9150 6800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9150 6800 50  0001 C CNN
-	4    9150 6800
+P 9700 6750
+F 0 "U18" H 9900 6900 50  0000 C CNN
+F 1 "74LS32" H 10000 6700 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9700 6750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9700 6750 50  0001 C CNN
+	4    9700 6750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8600 6700 0    50   Input ~ 0
+Text GLabel 9150 6650 0    50   Input ~ 0
 BOOTING
 Wire Wire Line
-	8850 6700 8600 6700
+	9400 6650 9150 6650
 Wire Wire Line
-	9450 6450 9700 6450
+	10000 6400 10250 6400
 Wire Wire Line
-	9450 6800 9700 6800
-Text HLabel 9700 6800 2    50   Input ~ 0
+	10000 6750 10250 6750
+Text HLabel 10250 6750 2    50   Input ~ 0
 ~RD
-Text HLabel 9700 6450 2    50   Input ~ 0
+Text HLabel 10250 6400 2    50   Input ~ 0
 ~WR
 Text HLabel 13650 1000 2    50   Input ~ 0
 ~IORQ
@@ -574,11 +537,11 @@ Wire Wire Line
 	12950 1000 12950 1250
 Wire Wire Line
 	12950 1000 13650 1000
-Connection ~ 6100 6350
-Connection ~ 6100 5850
+Connection ~ 6650 6350
+Connection ~ 6650 5850
 Wire Wire Line
 	3800 4600 3800 4950
-Text Notes 3500 7700 0    50   ~ 0
+Text Notes 3500 7850 0    50   ~ 0
 1111 1111 0111 xxxx (FF70-FF7F)\nFF70 = ~EXIT_BOOT\nFF71 = ~ENTER_ISP\nFF72 = ~WARM_BOOT\nFF73\nFF74\nFF75\nFF76\nFF77
 Text Notes 1550 7950 0    50   ~ 0
 1111 1111 0xxx xxxx (FF00-FF7F) \n~IO0_CS~ = (FF00-FF0F)\n~IO1_CS~ = (FF10-FF1F)\n~IO2_CS~ = (FF20-FF2F)\n~IO3_CS~ = (FF30-FF3F)\n~IO4_CS~ = (FF40-FF4F)\n~IO5_CS~ = (FF50-FF5F)\n~IO6_CS~ = (FF60-FF6F)\n~IO7_CS~ = (FF70-FF7F)
@@ -606,63 +569,57 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7300 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 6950 6200 6950
-Text GLabel 6200 6950 2    50   Input ~ 0
+	6650 6950 6750 6950
+Text GLabel 6750 6950 2    50   Input ~ 0
 ISP
-Text GLabel 4850 6850 0    50   Input ~ 0
-~ENTER_ISP
-Text Label 5350 6850 0    50   ~ 0
-~S
-Text Label 5350 7650 0    50   ~ 0
-~R
-Text GLabel 6200 7450 2    50   Input ~ 0
+Text GLabel 6750 7450 2    50   Input ~ 0
 ~ISP
 Wire Wire Line
-	5250 7350 5400 7350
+	5800 7350 5950 7350
 Wire Wire Line
-	5250 7150 5250 7350
+	5800 7150 5800 7350
 Wire Wire Line
-	6100 7150 5250 7150
+	6650 7150 5800 7150
 Wire Wire Line
-	6200 7450 6100 7450
+	6750 7450 6650 7450
 Wire Wire Line
-	6100 6950 6100 7150
+	6650 6950 6650 7150
 Wire Wire Line
-	6000 6950 6100 6950
+	6550 6950 6650 6950
 Wire Wire Line
-	6100 7450 6000 7450
+	6650 7450 6550 7450
 Wire Wire Line
-	6100 7250 6100 7450
+	6650 7250 6650 7450
 Wire Wire Line
-	5300 7250 6100 7250
+	5850 7250 6650 7250
 Wire Wire Line
-	5300 7050 5300 7250
+	5850 7050 5850 7250
 Wire Wire Line
-	5400 7050 5300 7050
+	5950 7050 5850 7050
 $Comp
 L 74xx:74LS00 U12
 U 4 1 5D47DC73
-P 5700 7450
+P 6250 7450
 AR Path="/5C68B4BB/5D47DC73" Ref="U12"  Part="4" 
 AR Path="/5DED3C2A/5D47DC73" Ref="U?"  Part="2" 
-F 0 "U12" H 5950 7350 50  0000 C CNN
-F 1 "74LS00" H 5700 7250 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5700 7450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5700 7450 50  0001 C CNN
-	4    5700 7450
+F 0 "U12" H 6500 7350 50  0000 C CNN
+F 1 "74LS00" H 6250 7250 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6250 7450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 6250 7450 50  0001 C CNN
+	4    6250 7450
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS00 U12
 U 3 1 5D47DC7A
-P 5700 6950
+P 6250 6950
 AR Path="/5C68B4BB/5D47DC7A" Ref="U12"  Part="3" 
 AR Path="/5DED3C2A/5D47DC7A" Ref="U?"  Part="1" 
-F 0 "U12" H 5950 6850 50  0000 C CNN
-F 1 "74LS00" H 5650 7150 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5700 6950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5700 6950 50  0001 C CNN
-	3    5700 6950
+F 0 "U12" H 6500 6850 50  0000 C CNN
+F 1 "74LS00" H 6200 7150 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6250 6950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 6250 6950 50  0001 C CNN
+	3    6250 6950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -705,13 +662,9 @@ Text HLabel 15800 5200 2    50   Input ~ 0
 +5V
 Wire Wire Line
 	950  5900 1500 5900
-Wire Wire Line
-	4850 5750 5150 5750
-Connection ~ 6100 6950
-Connection ~ 6100 7450
-Text GLabel 4050 6250 2    50   Input ~ 0
-~ENTER_ISP
-Text GLabel 4050 6350 2    50   Input ~ 0
+Connection ~ 6650 6950
+Connection ~ 6650 7450
+Text GLabel 4200 6500 2    50   Input ~ 0
 ~WARM_BOOT
 $Comp
 L pspice:DIODE D1
@@ -731,38 +684,20 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 5C7C7830
-P 5150 5400
+P 5850 5400
 AR Path="/5C7C7830" Ref="R?"  Part="1" 
 AR Path="/5C68B4BB/5C7C7830" Ref="R11"  Part="1" 
 AR Path="/5C8BEFCF/5C7C7830" Ref="R?"  Part="1" 
 AR Path="/5DED3C2A/5C7C7830" Ref="R?"  Part="1" 
-F 0 "R11" V 5200 5200 50  0000 L CNN
-F 1 "1k" V 5200 5500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5080 5400 50  0001 C CNN
-F 3 "~" H 5150 5400 50  0001 C CNN
-	1    5150 5400
+F 0 "R11" V 5900 5200 50  0000 L CNN
+F 1 "1k" V 5900 5500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5780 5400 50  0001 C CNN
+F 3 "~" H 5850 5400 50  0001 C CNN
+	1    5850 5400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5C7E157B
-P 5050 5400
-AR Path="/5C7E157B" Ref="R?"  Part="1" 
-AR Path="/5C68B4BB/5C7E157B" Ref="R10"  Part="1" 
-AR Path="/5C8BEFCF/5C7E157B" Ref="R?"  Part="1" 
-AR Path="/5DED3C2A/5C7E157B" Ref="R?"  Part="1" 
-F 0 "R10" V 5100 5200 50  0000 L CNN
-F 1 "1k" V 5100 5500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4980 5400 50  0001 C CNN
-F 3 "~" H 5050 5400 50  0001 C CNN
-	1    5050 5400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	5150 5250 5150 5200
-Connection ~ 5150 5750
-Wire Wire Line
-	5150 5750 5400 5750
+	5850 5250 5850 5200
 Wire Wire Line
 	2950 6750 2850 6750
 Wire Wire Line
@@ -805,9 +740,7 @@ Text GLabel 2250 4500 0    50   Input ~ 0
 ~WARM_BOOT
 Wire Wire Line
 	3550 4800 3550 4950
-Text GLabel 4850 7550 0    50   Input ~ 0
-~RESET
-Text GLabel 4850 6450 0    50   Input ~ 0
+Text GLabel 5800 6450 0    50   Input ~ 0
 ~RESET
 Connection ~ 3100 3900
 Text GLabel 2250 3900 0    50   Input ~ 0
@@ -920,7 +853,7 @@ Wire Wire Line
 	15550 5200 15550 5550
 Wire Wire Line
 	15550 7950 15550 9850
-Text GLabel 8000 6150 0    50   Input ~ 0
+Text GLabel 8550 6100 0    50   Input ~ 0
 ~CPU_RD
 Wire Wire Line
 	7600 1050 7600 2200
@@ -1103,41 +1036,41 @@ Text GLabel 10700 7900 0    50   Input ~ 0
 ~WR_BIOS
 Text GLabel 10700 8000 0    50   Input ~ 0
 ~RD_BIOS
-Text GLabel 9700 5700 2    50   Input ~ 0
+Text GLabel 10250 5650 2    50   Input ~ 0
 ~WR_BIOS
-Text GLabel 9700 6050 2    50   Input ~ 0
+Text GLabel 10250 6000 2    50   Input ~ 0
 ~RD_BIOS
 $Comp
 L Device:R R?
 U 1 1 5CBD5C57
-P 7000 5400
+P 7550 5400
 AR Path="/5CBD5C57" Ref="R?"  Part="1" 
 AR Path="/5C68B4BB/5CBD5C57" Ref="R13"  Part="1" 
 AR Path="/5C8BEFCF/5CBD5C57" Ref="R?"  Part="1" 
 AR Path="/5DED3C2A/5CBD5C57" Ref="R?"  Part="1" 
 AR Path="/5D62F4AC/5CBD5C57" Ref="R?"  Part="1" 
-F 0 "R13" V 7050 5200 50  0000 L CNN
-F 1 "330" V 6950 5150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6930 5400 50  0001 C CNN
-F 3 "~" H 7000 5400 50  0001 C CNN
-	1    7000 5400
+F 0 "R13" V 7600 5200 50  0000 L CNN
+F 1 "330" V 7500 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7480 5400 50  0001 C CNN
+F 3 "~" H 7550 5400 50  0001 C CNN
+	1    7550 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 5CBD5C5E
-P 7000 5800
+P 7550 5800
 AR Path="/5D62F4AC/5CBD5C5E" Ref="D?"  Part="1" 
 AR Path="/5C68B4BB/5CBD5C5E" Ref="D2"  Part="1" 
-F 0 "D2" H 7100 5750 50  0000 C CNN
-F 1 "~BOOTING" V 6800 6000 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 7000 5800 50  0001 C CNN
-F 3 "~" H 7000 5800 50  0001 C CNN
-	1    7000 5800
+F 0 "D2" H 7650 5750 50  0000 C CNN
+F 1 "~BOOTING" V 7350 6000 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7550 5800 50  0001 C CNN
+F 3 "~" H 7550 5800 50  0001 C CNN
+	1    7550 5800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7000 5550 7000 5650
+	7550 5550 7550 5650
 Connection ~ 13350 5200
 Connection ~ 13350 9850
 Connection ~ 12800 5200
@@ -1153,81 +1086,81 @@ Connection ~ 11750 9850
 Wire Wire Line
 	11750 9850 12800 9850
 Wire Wire Line
-	6200 5850 6100 5850
+	6750 5850 6650 5850
 Wire Wire Line
-	7000 5250 7000 5200
+	7550 5250 7550 5200
 $Comp
 L Device:R R?
 U 1 1 5CEAB5F8
-P 7250 5400
+P 7800 5400
 AR Path="/5CEAB5F8" Ref="R?"  Part="1" 
 AR Path="/5C68B4BB/5CEAB5F8" Ref="R14"  Part="1" 
 AR Path="/5C8BEFCF/5CEAB5F8" Ref="R?"  Part="1" 
 AR Path="/5DED3C2A/5CEAB5F8" Ref="R?"  Part="1" 
 AR Path="/5D62F4AC/5CEAB5F8" Ref="R?"  Part="1" 
-F 0 "R14" V 7300 5200 50  0000 L CNN
-F 1 "330" V 7200 5150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7180 5400 50  0001 C CNN
-F 3 "~" H 7250 5400 50  0001 C CNN
-	1    7250 5400
+F 0 "R14" V 7850 5200 50  0000 L CNN
+F 1 "330" V 7750 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7730 5400 50  0001 C CNN
+F 3 "~" H 7800 5400 50  0001 C CNN
+	1    7800 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 5CEAB5FF
-P 7250 5800
+P 7800 5800
 AR Path="/5D62F4AC/5CEAB5FF" Ref="D?"  Part="1" 
 AR Path="/5C68B4BB/5CEAB5FF" Ref="D3"  Part="1" 
-F 0 "D3" H 7350 5750 50  0000 C CNN
-F 1 "~ISP" H 7050 5850 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 7250 5800 50  0001 C CNN
-F 3 "~" H 7250 5800 50  0001 C CNN
-	1    7250 5800
+F 0 "D3" H 7900 5750 50  0000 C CNN
+F 1 "~ISP" H 7600 5850 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7800 5800 50  0001 C CNN
+F 3 "~" H 7800 5800 50  0001 C CNN
+	1    7800 5800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7250 5550 7250 5650
+	7800 5550 7800 5650
 Wire Wire Line
-	7250 5250 7250 5200
+	7800 5250 7800 5200
 $Comp
 L Device:R R?
 U 1 1 5CED1DC7
-P 7500 5400
+P 8050 5400
 AR Path="/5CED1DC7" Ref="R?"  Part="1" 
 AR Path="/5C68B4BB/5CED1DC7" Ref="R15"  Part="1" 
 AR Path="/5C8BEFCF/5CED1DC7" Ref="R?"  Part="1" 
 AR Path="/5DED3C2A/5CED1DC7" Ref="R?"  Part="1" 
 AR Path="/5D62F4AC/5CED1DC7" Ref="R?"  Part="1" 
-F 0 "R15" V 7550 5200 50  0000 L CNN
-F 1 "330" V 7450 5150 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7430 5400 50  0001 C CNN
-F 3 "~" H 7500 5400 50  0001 C CNN
-	1    7500 5400
+F 0 "R15" V 8100 5200 50  0000 L CNN
+F 1 "330" V 8000 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7980 5400 50  0001 C CNN
+F 3 "~" H 8050 5400 50  0001 C CNN
+	1    8050 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 5CED1DCE
-P 7500 5800
+P 8050 5800
 AR Path="/5D62F4AC/5CED1DCE" Ref="D?"  Part="1" 
 AR Path="/5C68B4BB/5CED1DCE" Ref="D4"  Part="1" 
-F 0 "D4" H 7600 5750 50  0000 C CNN
-F 1 "POWER" H 7150 5750 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 7500 5800 50  0001 C CNN
-F 3 "~" H 7500 5800 50  0001 C CNN
-	1    7500 5800
+F 0 "D4" H 8150 5750 50  0000 C CNN
+F 1 "POWER" H 7700 5750 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8050 5800 50  0001 C CNN
+F 3 "~" H 8050 5800 50  0001 C CNN
+	1    8050 5800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7500 5550 7500 5650
+	8050 5550 8050 5650
 Wire Wire Line
-	7500 5250 7500 5200
+	8050 5250 8050 5200
 Wire Wire Line
-	7000 6050 7000 5950
+	7550 6050 7550 5950
 Wire Wire Line
-	7250 7250 7250 5950
+	7800 7250 7800 5950
 Wire Wire Line
-	7500 5950 7500 9850
+	8050 5950 8050 9850
 Connection ~ 3550 4950
 Connection ~ 3800 4950
 Wire Wire Line
@@ -1238,8 +1171,6 @@ Wire Wire Line
 	4200 3650 4800 3650
 Text HLabel 4200 3650 0    50   Input ~ 0
 RESET
-Wire Wire Line
-	5050 5250 5050 5200
 $Comp
 L Device:R R?
 U 1 1 5D1FBE46
@@ -1350,23 +1281,23 @@ Wire Wire Line
 Wire Wire Line
 	6600 1200 9450 1200
 Wire Wire Line
-	8000 5800 8800 5800
+	8550 5750 9350 5750
 Wire Wire Line
-	8000 6150 8700 6150
+	8550 6100 9250 6100
 Wire Wire Line
-	8850 6550 8800 6550
+	9400 6500 9350 6500
 Wire Wire Line
-	8800 6550 8800 5800
-Connection ~ 8800 5800
+	9350 6500 9350 5750
+Connection ~ 9350 5750
 Wire Wire Line
-	8800 5800 8850 5800
+	9350 5750 9400 5750
 Wire Wire Line
-	8850 6900 8700 6900
+	9400 6850 9250 6850
 Wire Wire Line
-	8700 6900 8700 6150
-Connection ~ 8700 6150
+	9250 6850 9250 6100
+Connection ~ 9250 6100
 Wire Wire Line
-	8700 6150 8850 6150
+	9250 6100 9400 6100
 $Comp
 L Connector:USB_B_Mini J1
 U 1 1 5DF9E690
@@ -1415,24 +1346,6 @@ Wire Wire Line
 	1300 1350 850  1350
 Wire Wire Line
 	5850 600  5850 1100
-Connection ~ 5050 5200
-Wire Wire Line
-	5050 5200 5150 5200
-Connection ~ 5150 5200
-Connection ~ 7000 5200
-Wire Wire Line
-	7000 5200 7250 5200
-Connection ~ 7250 5200
-Wire Wire Line
-	7250 5200 7500 5200
-Connection ~ 7500 5200
-Wire Wire Line
-	7500 5200 11750 5200
-Connection ~ 7500 9850
-Wire Wire Line
-	7500 9850 11750 9850
-Wire Wire Line
-	5150 5200 7000 5200
 Wire Wire Line
 	8300 600  15650 600 
 Wire Wire Line
@@ -1440,11 +1353,7 @@ Wire Wire Line
 Connection ~ 1500 5200
 Connection ~ 1500 9850
 Connection ~ 3450 5200
-Wire Wire Line
-	3450 5200 5050 5200
 Connection ~ 3450 9850
-Wire Wire Line
-	3450 9850 7500 9850
 Wire Wire Line
 	1500 5200 3450 5200
 Wire Wire Line
@@ -1454,22 +1363,13 @@ Wire Wire Line
 Wire Wire Line
 	1000 5200 1500 5200
 Wire Wire Line
-	4850 6450 5400 6450
+	5200 5550 5200 6850
 Wire Wire Line
-	4850 6850 5050 6850
+	5850 5550 5850 5750
 Wire Wire Line
-	5050 5550 5050 6850
-Connection ~ 5050 6850
+	6650 6050 7550 6050
 Wire Wire Line
-	5050 6850 5400 6850
-Wire Wire Line
-	5150 5550 5150 5750
-Connection ~ 6100 6050
-Wire Wire Line
-	6100 6050 7000 6050
-Connection ~ 6100 7250
-Wire Wire Line
-	6100 7250 7250 7250
+	6650 7250 7800 7250
 $Comp
 L 8051-rescue:74LS373_ARRANGED U2
 U 1 1 5CD40E57
@@ -2099,8 +1999,6 @@ Wire Wire Line
 	6550 3950 7050 3950
 Wire Wire Line
 	6550 4050 6950 4050
-Wire Wire Line
-	4850 7550 5400 7550
 Text HLabel 14450 3950 0    50   Input ~ 0
 RESET
 Wire Wire Line
@@ -2123,9 +2021,11 @@ Connection ~ 4800 3900
 Wire Wire Line
 	4800 3900 5150 3900
 $Comp
-L VGMPlayer-rescue:PS2_DUAL U3
+L 8051-rescue:PS2_DUAL-VGMPlayer-rescue U3
 U 1 1 5EDBB046
 P 1500 2700
+AR Path="/5EDBB046" Ref="U3"  Part="1" 
+AR Path="/5C68B4BB/5EDBB046" Ref="U3"  Part="1" 
 F 0 "U3" H 1545 1733 50  0000 C CNN
 F 1 "PS2_DUAL" H 1545 1824 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PS2DUAL" H 1500 2700 50  0001 C CNN
@@ -2228,9 +2128,11 @@ Wire Wire Line
 Wire Wire Line
 	2950 600  3800 600 
 $Comp
-L VGMPlayer-rescue:PS2_DUAL U3
+L 8051-rescue:PS2_DUAL-VGMPlayer-rescue U3
 U 2 1 5F87A88C
 P 1500 3800
+AR Path="/5F87A88C" Ref="U3"  Part="2" 
+AR Path="/5C68B4BB/5F87A88C" Ref="U3"  Part="2" 
 F 0 "U3" H 1545 2833 50  0000 C CNN
 F 1 "PS2_DUAL" H 1545 2924 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PS2DUAL" H 1500 3800 50  0001 C CNN
@@ -2383,4 +2285,96 @@ Wire Wire Line
 Wire Wire Line
 	2200 2300 2200 3400
 Connection ~ 2200 3400
+Connection ~ 8050 9850
+Wire Wire Line
+	8050 9850 11750 9850
+Wire Wire Line
+	3450 9850 8050 9850
+Connection ~ 7550 5200
+Wire Wire Line
+	7550 5200 7800 5200
+Connection ~ 7800 5200
+Wire Wire Line
+	7800 5200 8050 5200
+Connection ~ 8050 5200
+Wire Wire Line
+	8050 5200 11750 5200
+Connection ~ 6650 6050
+Connection ~ 6650 7250
+Text GLabel 5800 5750 0    50   Input ~ 0
+~EXIT_BOOT
+Text GLabel 5100 6850 0    50   Input ~ 0
+~ENTER_ISP
+Text GLabel 4200 6000 2    50   Input ~ 0
+~EXIT_BOOT
+Text GLabel 4200 6250 2    50   Input ~ 0
+~ENTER_ISP
+Wire Wire Line
+	5100 6850 5200 6850
+Connection ~ 5850 5200
+Wire Wire Line
+	5850 5200 7550 5200
+Wire Wire Line
+	5850 5750 5950 5750
+Wire Wire Line
+	3450 5200 5200 5200
+Wire Wire Line
+	5850 5750 5800 5750
+Connection ~ 5850 5750
+Wire Wire Line
+	5950 6450 5800 6450
+Connection ~ 5200 6850
+Wire Wire Line
+	5200 6850 5950 6850
+Wire Wire Line
+	5200 5250 5200 5200
+Connection ~ 5200 5200
+Wire Wire Line
+	5200 5200 5850 5200
+$Comp
+L Device:R R?
+U 1 1 5D40B226
+P 5200 5400
+AR Path="/5D40B226" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5D40B226" Ref="R10"  Part="1" 
+AR Path="/5C8BEFCF/5D40B226" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5D40B226" Ref="R?"  Part="1" 
+F 0 "R10" V 5250 5200 50  0000 L CNN
+F 1 "1k" V 5250 5500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5130 5400 50  0001 C CNN
+F 3 "~" H 5200 5400 50  0001 C CNN
+	1    5200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6350 4050 6500
+$Comp
+L 74xx:74LS138 U10
+U 1 1 5D49D804
+P 3450 6450
+AR Path="/5C68B4BB/5D49D804" Ref="U10"  Part="1" 
+AR Path="/5DED3C2A/5D49D804" Ref="U?"  Part="1" 
+AR Path="/5D59EC5C/5D49D804" Ref="U?"  Part="1" 
+AR Path="/5D62F4AC/5D49D804" Ref="U?"  Part="1" 
+F 0 "U10" H 3200 6900 50  0000 C CNN
+F 1 "74LS138" H 3700 6900 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 3450 6450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 3450 6450 50  0001 C CNN
+	1    3450 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6500 4200 6500
+Wire Wire Line
+	3950 6250 4200 6250
+Wire Wire Line
+	3950 6150 4050 6150
+Wire Wire Line
+	4050 6150 4050 6000
+Wire Wire Line
+	4050 6000 4200 6000
+Text GLabel 5800 7550 0    50   Input ~ 0
+~RESET
+Wire Wire Line
+	5950 7550 5800 7550
 $EndSCHEMATC

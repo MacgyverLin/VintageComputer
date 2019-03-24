@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6594)
+    (start_pass_no 261)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -88,7 +88,7 @@
     "Net-(D2-Pad2)" "Net-(C3-Pad1)" "Net-(D10-Pad1)" "Net-(JP1-Pad2)" "Net-(SW2-Pad4)" "Net-(C1-Pad1)" "Net-(SW2-Pad5)" "Net-(SW2-Pad3)"
     "Net-(SW2-Pad6)" "Net-(R6-Pad1)" "MOUSE_CLK" "KEYBOARD_CLK" "Net-(R4-Pad1)" "Net-(R5-Pad1)" "KEYBOARD_DAT" "MOUSE_DAT"
     "Net-(R7-Pad1)" "PSX_CMD" "PSX_CLK" "~PSX_SEL_1" "~PSX_SEL_0" "~PSX_ACK" "PSX_DAT" "Net-(J3-Pad3)"
-    "Net-(J3-Pad8)" "Net-(J4-Pad8)" "Net-(J4-Pad3)" "Net-(U3-Pad8)" "Net-(U3-Pad2)" "Net-(U3-Pad6)" "Net-(U3-Pad12)"
+    "Net-(J3-Pad8)" "Net-(J4-Pad8)" "Net-(J4-Pad3)" "Net-(U3-Pad8)" "Net-(U3-Pad2)" "Net-(U3-Pad6)" "Net-(U3-Pad12)" "~EXIT_BOOT"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
