@@ -1304,7 +1304,7 @@ U 1 1 5DF9E690
 P 850 800
 F 0 "J1" H 905 1267 50  0000 C CNN
 F 1 "USB_B_Mini" H 905 1176 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521_CircularHoles" H 1000 750 50  0001 C CNN
+F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 1000 750 50  0001 C CNN
 F 3 "~" H 1000 750 50  0001 C CNN
 	1    850  800 
 	1    0    0    -1  
@@ -2377,4 +2377,652 @@ Text GLabel 5800 7550 0    50   Input ~ 0
 ~RESET
 Wire Wire Line
 	5950 7550 5800 7550
+$Comp
+L CPU:Z80CPU U?
+U 1 1 5CA823FE
+P -1350 3200
+F 0 "U?" H -1800 4650 50  0000 C CNN
+F 1 "Z80CPU" H -950 4600 50  0000 C CNN
+F 2 "" H -1350 3600 50  0001 C CNN
+F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H -1350 3600 50  0001 C CNN
+	1    -1350 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel -2200 2000 0    50   Input ~ 0
+~RESET
+$Comp
+L Device:R R?
+U 1 1 5CACCF8F
+P -2900 1800
+AR Path="/5CACCF8F" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5CACCF8F" Ref="R?"  Part="1" 
+AR Path="/5C8BEFCF/5CACCF8F" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5CACCF8F" Ref="R?"  Part="1" 
+F 0 "R?" V -2850 1600 50  0000 L CNN
+F 1 "10k" V -2850 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V -2970 1800 50  0001 C CNN
+F 3 "~" H -2900 1800 50  0001 C CNN
+	1    -2900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CACCF96
+P -2750 1800
+AR Path="/5CACCF96" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5CACCF96" Ref="R?"  Part="1" 
+AR Path="/5C8BEFCF/5CACCF96" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5CACCF96" Ref="R?"  Part="1" 
+F 0 "R?" V -2700 1600 50  0000 L CNN
+F 1 "10k" V -2700 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V -2820 1800 50  0001 C CNN
+F 3 "~" H -2750 1800 50  0001 C CNN
+	1    -2750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1350 1350 -1350 1700
+$Comp
+L Device:R R?
+U 1 1 5CC4353E
+P -3050 1800
+AR Path="/5CC4353E" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5CC4353E" Ref="R?"  Part="1" 
+AR Path="/5C8BEFCF/5CC4353E" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5CC4353E" Ref="R?"  Part="1" 
+F 0 "R?" V -3000 1600 50  0000 L CNN
+F 1 "10k" V -3000 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V -3120 1800 50  0001 C CNN
+F 3 "~" H -3050 1800 50  0001 C CNN
+	1    -3050 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel -2250 3800 0    50   Input ~ 0
+~CPU_WR
+Text GLabel -2250 3700 0    50   Input ~ 0
+~CPU_RD
+Wire Wire Line
+	-2050 3700 -2250 3700
+Wire Wire Line
+	-2050 3800 -2250 3800
+Text HLabel -400 3500 2    50   Input ~ 0
+A15
+Text HLabel -400 3400 2    50   Input ~ 0
+A14
+Text HLabel -400 3300 2    50   Input ~ 0
+A13
+Text HLabel -400 3200 2    50   Input ~ 0
+A12
+Text HLabel -400 3100 2    50   Input ~ 0
+A11
+Text HLabel -400 3000 2    50   Input ~ 0
+A10
+Text HLabel -400 2900 2    50   Input ~ 0
+A9
+Text HLabel -400 2800 2    50   Input ~ 0
+A8
+Text HLabel -400 2700 2    50   Input ~ 0
+A7
+Text HLabel -400 2600 2    50   Input ~ 0
+A6
+Text HLabel -400 2500 2    50   Input ~ 0
+A5
+Text HLabel -400 2400 2    50   Input ~ 0
+A4
+Text HLabel -400 2300 2    50   Input ~ 0
+A3
+Text HLabel -400 2200 2    50   Input ~ 0
+A2
+Text HLabel -400 2100 2    50   Input ~ 0
+A1
+Text HLabel -400 2000 2    50   Input ~ 0
+A0
+Wire Wire Line
+	-650 3500 -400 3500
+Wire Wire Line
+	-650 3400 -400 3400
+Wire Wire Line
+	-650 3300 -400 3300
+Wire Wire Line
+	-650 3200 -400 3200
+Wire Wire Line
+	-650 3100 -400 3100
+Wire Wire Line
+	-650 3000 -400 3000
+Wire Wire Line
+	-650 2900 -400 2900
+Wire Wire Line
+	-650 2800 -400 2800
+Wire Wire Line
+	-650 2700 -400 2700
+Wire Wire Line
+	-650 2600 -400 2600
+Wire Wire Line
+	-650 2500 -400 2500
+Wire Wire Line
+	-650 2400 -400 2400
+Wire Wire Line
+	-650 2300 -400 2300
+Wire Wire Line
+	-650 2200 -400 2200
+Wire Wire Line
+	-650 2100 -400 2100
+Wire Wire Line
+	-650 2000 -400 2000
+Text HLabel -400 4400 2    50   Input ~ 0
+D7
+Text HLabel -400 4300 2    50   Input ~ 0
+D6
+Text HLabel -400 4200 2    50   Input ~ 0
+D5
+Text HLabel -400 4100 2    50   Input ~ 0
+D4
+Text HLabel -400 4000 2    50   Input ~ 0
+D3
+Text HLabel -400 3900 2    50   Input ~ 0
+D2
+Text HLabel -400 3800 2    50   Input ~ 0
+D1
+Text HLabel -400 3700 2    50   Input ~ 0
+D0
+Wire Wire Line
+	-650 4300 -400 4300
+Wire Wire Line
+	-650 4200 -400 4200
+Wire Wire Line
+	-650 4100 -400 4100
+Wire Wire Line
+	-650 4000 -400 4000
+Wire Wire Line
+	-650 3900 -400 3900
+Wire Wire Line
+	-650 3800 -400 3800
+Wire Wire Line
+	-650 3700 -400 3700
+Wire Wire Line
+	-650 4400 -400 4400
+$Comp
+L Device:R R?
+U 1 1 5D619E05
+P -2600 1800
+AR Path="/5D619E05" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5D619E05" Ref="R?"  Part="1" 
+AR Path="/5C8BEFCF/5D619E05" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5D619E05" Ref="R?"  Part="1" 
+F 0 "R?" V -2550 1600 50  0000 L CNN
+F 1 "10k" V -2550 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V -2670 1800 50  0001 C CNN
+F 3 "~" H -2600 1800 50  0001 C CNN
+	1    -2600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2200 2000 -2050 2000
+Wire Wire Line
+	-2600 2600 -2050 2600
+Wire Wire Line
+	-2050 2700 -2750 2700
+Wire Wire Line
+	-2900 3200 -2050 3200
+Wire Wire Line
+	-2050 4300 -3050 4300
+$Comp
+L 74xx:74LS14 U11
+U 4 1 5DDB1560
+P -5500 2300
+F 0 "U11" H -5750 2450 50  0000 C CNN
+F 1 "74LS14" H -5800 2250 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H -5500 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H -5500 2300 50  0001 C CNN
+	4    -5500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 5DE0E9BE
+P -4900 1600
+AR Path="/5C68B4BB/5DE0E9BE" Ref="Y?"  Part="1" 
+AR Path="/5C8BEFCF/5DE0E9BE" Ref="Y?"  Part="1" 
+AR Path="/5DED3C2A/5DE0E9BE" Ref="Y?"  Part="1" 
+F 0 "Y?" H -5050 1550 50  0000 C CNN
+F 1 "2MHz" H -4650 1550 50  0000 C CNN
+F 2 "Crystal:Crystal_HC18-U_Vertical" H -4900 1600 50  0001 C CNN
+F 3 "~" H -4900 1600 50  0001 C CNN
+	1    -4900 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DEC91F3
+P -5150 1850
+AR Path="/5DEC91F3" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5DEC91F3" Ref="R?"  Part="1" 
+AR Path="/5C8BEFCF/5DEC91F3" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5DEC91F3" Ref="R?"  Part="1" 
+F 0 "R?" V -5100 1650 50  0000 L CNN
+F 1 "1k" V -5100 1950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V -5220 1850 50  0001 C CNN
+F 3 "~" H -5150 1850 50  0001 C CNN
+	1    -5150 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U11
+U 5 1 5E211378
+P -4300 2300
+F 0 "U11" H -4550 2450 50  0000 C CNN
+F 1 "74LS14" H -4600 2250 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H -4300 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H -4300 2300 50  0001 C CNN
+	5    -4300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U11
+U 6 1 5E26E6D5
+P -3600 2300
+F 0 "U11" H -3850 2450 50  0000 C CNN
+F 1 "74LS14" H -3900 2250 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H -3600 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H -3600 2300 50  0001 C CNN
+	6    -3600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-5850 2300 -5800 2300
+Wire Wire Line
+	-3050 1350 -2900 1350
+Wire Wire Line
+	-2600 1650 -2600 1350
+Connection ~ -2600 1350
+Wire Wire Line
+	-2600 1350 -1350 1350
+Wire Wire Line
+	-3050 1350 -3050 1650
+Wire Wire Line
+	-2900 1650 -2900 1350
+Connection ~ -2900 1350
+Wire Wire Line
+	-2900 1350 -2750 1350
+Wire Wire Line
+	-2750 1650 -2750 1350
+Connection ~ -2750 1350
+Wire Wire Line
+	-2750 1350 -2600 1350
+Wire Wire Line
+	-2600 1950 -2600 2600
+Wire Wire Line
+	-2750 1950 -2750 2700
+Wire Wire Line
+	-2900 1950 -2900 3200
+Wire Wire Line
+	-3050 1950 -3050 4300
+Wire Wire Line
+	-2050 2300 -3200 2300
+$Comp
+L 8051-rescue:65C02 U?
+U 1 1 5F24ED15
+P -1400 5350
+F 0 "U?" H -1400 5478 50  0000 C CNN
+F 1 "65C02" H -1400 5387 50  0000 C CNN
+F 2 "" H -1400 5350 50  0001 C CNN
+F 3 "" H -1400 5350 50  0001 C CNN
+	1    -1400 5350
+	1    0    0    -1  
+$EndComp
+Text HLabel -450 7200 2    50   Input ~ 0
+A15
+Text HLabel -450 7100 2    50   Input ~ 0
+A14
+Text HLabel -450 7000 2    50   Input ~ 0
+A13
+Text HLabel -450 6900 2    50   Input ~ 0
+A12
+Text HLabel -450 6800 2    50   Input ~ 0
+A11
+Text HLabel -450 6700 2    50   Input ~ 0
+A10
+Text HLabel -450 6600 2    50   Input ~ 0
+A9
+Text HLabel -450 6500 2    50   Input ~ 0
+A8
+Text HLabel -450 6400 2    50   Input ~ 0
+A7
+Text HLabel -450 6300 2    50   Input ~ 0
+A6
+Text HLabel -450 6200 2    50   Input ~ 0
+A5
+Text HLabel -450 6100 2    50   Input ~ 0
+A4
+Text HLabel -450 6000 2    50   Input ~ 0
+A3
+Text HLabel -450 5900 2    50   Input ~ 0
+A2
+Text HLabel -450 5800 2    50   Input ~ 0
+A1
+Text HLabel -450 5700 2    50   Input ~ 0
+A0
+Wire Wire Line
+	-700 7200 -450 7200
+Wire Wire Line
+	-700 7100 -450 7100
+Wire Wire Line
+	-700 7000 -450 7000
+Wire Wire Line
+	-700 6900 -450 6900
+Wire Wire Line
+	-700 6800 -450 6800
+Wire Wire Line
+	-700 6700 -450 6700
+Wire Wire Line
+	-700 6600 -450 6600
+Wire Wire Line
+	-700 6500 -450 6500
+Wire Wire Line
+	-700 6400 -450 6400
+Wire Wire Line
+	-700 6300 -450 6300
+Wire Wire Line
+	-700 6200 -450 6200
+Wire Wire Line
+	-700 6100 -450 6100
+Wire Wire Line
+	-700 6000 -450 6000
+Wire Wire Line
+	-700 5900 -450 5900
+Wire Wire Line
+	-700 5800 -450 5800
+Wire Wire Line
+	-700 5700 -450 5700
+Text HLabel -450 8100 2    50   Input ~ 0
+D7
+Text HLabel -450 8000 2    50   Input ~ 0
+D6
+Text HLabel -450 7900 2    50   Input ~ 0
+D5
+Text HLabel -450 7800 2    50   Input ~ 0
+D4
+Text HLabel -450 7700 2    50   Input ~ 0
+D3
+Text HLabel -450 7600 2    50   Input ~ 0
+D2
+Text HLabel -450 7500 2    50   Input ~ 0
+D1
+Text HLabel -450 7400 2    50   Input ~ 0
+D0
+Wire Wire Line
+	-700 8000 -450 8000
+Wire Wire Line
+	-700 7900 -450 7900
+Wire Wire Line
+	-700 7800 -450 7800
+Wire Wire Line
+	-700 7700 -450 7700
+Wire Wire Line
+	-700 7600 -450 7600
+Wire Wire Line
+	-700 7500 -450 7500
+Wire Wire Line
+	-700 7400 -450 7400
+Wire Wire Line
+	-700 8100 -450 8100
+Wire Wire Line
+	-3200 2300 -3200 6100
+Wire Wire Line
+	-3200 6100 -2100 6100
+Connection ~ -3200 2300
+Wire Wire Line
+	-3200 2300 -3300 2300
+Text GLabel -2250 5850 0    50   Input ~ 0
+~RESET
+Wire Wire Line
+	-2250 5850 -2100 5850
+Wire Wire Line
+	-2600 2600 -2600 6800
+Wire Wire Line
+	-2600 6800 -2100 6800
+Connection ~ -2600 2600
+Wire Wire Line
+	-2750 2700 -2750 6900
+Wire Wire Line
+	-2750 6900 -2100 6900
+Connection ~ -2750 2700
+$Comp
+L 74xx:74LS14 U?
+U 3 1 5F4947C3
+P -3550 7600
+F 0 "U?" H -3800 7750 50  0000 C CNN
+F 1 "74LS14" H -3850 7550 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H -3550 7600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H -3550 7600 50  0001 C CNN
+	3    -3550 7600
+	-1   0    0    -1  
+$EndComp
+Text GLabel -3950 7350 0    50   Input ~ 0
+~CPU_WR
+Text GLabel -3950 7600 0    50   Input ~ 0
+~CPU_RD
+Wire Wire Line
+	-3850 7600 -3950 7600
+Wire Wire Line
+	-3050 7600 -3250 7600
+Wire Wire Line
+	-1500 8750 -1500 8850
+Wire Wire Line
+	-1500 8850 -1400 8850
+Wire Wire Line
+	-1300 8850 -1300 8750
+Wire Wire Line
+	-1400 8750 -1400 8850
+Connection ~ -1400 8850
+Wire Wire Line
+	-1400 8850 -1300 8850
+Wire Wire Line
+	-3900 2300 -3950 2300
+Wire Wire Line
+	-3950 2300 -4000 2300
+Connection ~ -3950 2300
+Wire Wire Line
+	-3950 1600 -3950 2300
+Wire Wire Line
+	-4600 2300 -4650 2300
+Wire Wire Line
+	-5850 1600 -5850 2300
+Wire Wire Line
+	-5150 2300 -5100 2300
+$Comp
+L Device:C C?
+U 1 1 5DE6BE2C
+P -4950 2300
+AR Path="/5DE6BE2C" Ref="C?"  Part="1" 
+AR Path="/5C68B4BB/5DE6BE2C" Ref="C?"  Part="1" 
+AR Path="/5C8BEFCF/5DE6BE2C" Ref="C?"  Part="1" 
+AR Path="/5DED3C2A/5DE6BE2C" Ref="C?"  Part="1" 
+F 0 "C?" V -4900 2400 50  0000 L CNN
+F 1 "0.05uF" V -4800 2150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H -4912 2150 50  0001 C CNN
+F 3 "~" H -4950 2300 50  0001 C CNN
+	1    -4950 2300
+	0    -1   -1   0   
+$EndComp
+Connection ~ -4650 2300
+Wire Wire Line
+	-5150 2300 -5200 2300
+Wire Wire Line
+	-4650 2300 -4800 2300
+Connection ~ -5150 2300
+Wire Wire Line
+	-4650 2000 -4650 2300
+Wire Wire Line
+	-5150 2000 -5150 2300
+Wire Wire Line
+	-4650 1600 -3950 1600
+Wire Wire Line
+	-4750 1600 -4650 1600
+Connection ~ -4650 1600
+Wire Wire Line
+	-4650 1600 -4650 1700
+Wire Wire Line
+	-5150 1600 -5850 1600
+Wire Wire Line
+	-5150 1600 -5050 1600
+Connection ~ -5150 1600
+Wire Wire Line
+	-5150 1700 -5150 1600
+$Comp
+L Device:R R?
+U 1 1 5DEC91FA
+P -4650 1850
+AR Path="/5DEC91FA" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/5DEC91FA" Ref="R?"  Part="1" 
+AR Path="/5C8BEFCF/5DEC91FA" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/5DEC91FA" Ref="R?"  Part="1" 
+F 0 "R?" V -4600 1650 50  0000 L CNN
+F 1 "1k" V -4600 1950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V -4720 1850 50  0001 C CNN
+F 3 "~" H -4650 1850 50  0001 C CNN
+	1    -4650 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2900 3200 -2900 7250
+Wire Wire Line
+	-2900 7250 -2100 7250
+Connection ~ -2900 3200
+$Comp
+L 74xx:74LS14 U?
+U 4 1 60C4C6AB
+P -5600 3700
+F 0 "U?" H -5850 3850 50  0000 C CNN
+F 1 "74LS14" H -5900 3650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H -5600 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H -5600 3700 50  0001 C CNN
+	4    -5600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 60C4C6B2
+P -5250 4050
+AR Path="/5C68B4BB/60C4C6B2" Ref="Y?"  Part="1" 
+AR Path="/5C8BEFCF/60C4C6B2" Ref="Y?"  Part="1" 
+AR Path="/5DED3C2A/60C4C6B2" Ref="Y?"  Part="1" 
+F 0 "Y?" H -5400 4000 50  0000 C CNN
+F 1 "4MHz" H -5000 4000 50  0000 C CNN
+F 2 "Crystal:Crystal_HC18-U_Vertical" H -5250 4050 50  0001 C CNN
+F 3 "~" H -5250 4050 50  0001 C CNN
+	1    -5250 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C4C6B9
+P -5600 3300
+AR Path="/60C4C6B9" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/60C4C6B9" Ref="R?"  Part="1" 
+AR Path="/5C8BEFCF/60C4C6B9" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/60C4C6B9" Ref="R?"  Part="1" 
+F 0 "R?" V -5550 3100 50  0000 L CNN
+F 1 "1.5k" V -5550 3400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V -5670 3300 50  0001 C CNN
+F 3 "~" H -5600 3300 50  0001 C CNN
+	1    -5600 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS14 U?
+U 5 1 60C4C6C0
+P -4900 3700
+F 0 "U?" H -5150 3850 50  0000 C CNN
+F 1 "74LS14" H -5200 3650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H -4900 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H -4900 3700 50  0001 C CNN
+	5    -4900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U?
+U 6 1 60C4C6C7
+P -4200 3700
+F 0 "U?" H -4450 3850 50  0000 C CNN
+F 1 "74LS14" H -4500 3650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H -4200 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H -4200 3700 50  0001 C CNN
+	6    -4200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-5950 3700 -5900 3700
+Wire Wire Line
+	-5750 3300 -5950 3300
+$Comp
+L Device:R R?
+U 1 1 60C4C6D0
+P -4900 3300
+AR Path="/60C4C6D0" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/60C4C6D0" Ref="R?"  Part="1" 
+AR Path="/5C8BEFCF/60C4C6D0" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/60C4C6D0" Ref="R?"  Part="1" 
+F 0 "R?" V -4850 3100 50  0000 L CNN
+F 1 "3k" V -4850 3400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V -4970 3300 50  0001 C CNN
+F 3 "~" H -4900 3300 50  0001 C CNN
+	1    -4900 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	-4750 3300 -4550 3300
+Wire Wire Line
+	-4500 3700 -4550 3700
+Wire Wire Line
+	-4550 3700 -4600 3700
+Connection ~ -4550 3700
+Wire Wire Line
+	-4550 3700 -4550 4050
+Wire Wire Line
+	-4550 4050 -5100 4050
+Wire Wire Line
+	-5400 4050 -5950 4050
+Wire Wire Line
+	-5950 4050 -5950 3700
+Wire Wire Line
+	-5450 3300 -5300 3300
+Wire Wire Line
+	-5300 3700 -5200 3700
+Wire Wire Line
+	-4550 3300 -4550 3700
+Wire Wire Line
+	-5300 3300 -5300 3700
+Connection ~ -5300 3300
+Wire Wire Line
+	-5300 3300 -5050 3300
+Connection ~ -5300 3700
+Wire Wire Line
+	-5950 3300 -5950 3700
+Connection ~ -5950 3700
+$Comp
+L Device:R R?
+U 1 1 60C4C6E8
+P -5950 4300
+AR Path="/60C4C6E8" Ref="R?"  Part="1" 
+AR Path="/5C68B4BB/60C4C6E8" Ref="R?"  Part="1" 
+AR Path="/5C8BEFCF/60C4C6E8" Ref="R?"  Part="1" 
+AR Path="/5DED3C2A/60C4C6E8" Ref="R?"  Part="1" 
+F 0 "R?" V -5900 4100 50  0000 L CNN
+F 1 "15k" V -5900 4400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V -6020 4300 50  0001 C CNN
+F 3 "~" H -5950 4300 50  0001 C CNN
+	1    -5950 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-5950 4050 -5950 4150
+Connection ~ -5950 4050
+Wire Wire Line
+	-3950 7350 -3050 7350
+Wire Wire Line
+	-3050 7350 -3050 7600
+Connection ~ -3050 7350
+Wire Wire Line
+	-3050 7350 -2100 7350
 $EndSCHEMATC
